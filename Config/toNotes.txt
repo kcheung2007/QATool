@@ -1,0 +1,107 @@
+#From,TO, CC, BCC
+dummy@zoo.com,ua0021@zel.zantaz.com,,
+dummy@zoo.com,,ua0022@zel.zantaz.com,
+dummy@zoo.com,,,ua0023@zel.zantaz.com
+dummy@zoo.com,ua0221@zel.zantaz.com,,
+dummy@zoo.com,,ua0222@zel.zantaz.com,
+dummy@zoo.com,,,ua0223@zel.zantaz.com
+dummy@zoo.com,ua0011@zel.zantaz.com; ua0211@zel.zantaz.com,,
+dummy@zoo.com,,ua0012@zel.zantaz.com; ua0212@zel.zantaz.com,
+dummy@zoo.com,,,ua0013@zel.zantaz.com; ua0213@zel.zantaz.com
+dummy@zoo.com,ua0021@zel.zantaz.com; ua0031@zel.zantaz.com,,
+dummy@zoo.com,,ua0022@zel.zantaz.com; ua0032@zel.zantaz.com,
+dummy@zoo.com,,,ua0023@zel.zantaz.com; ua0033@zel.zantaz.com
+dummy@zoo.com,ua0211@zel.zantaz.com; ua0231@zel.zantaz.com,,
+dummy@zoo.com,,ua0212@zel.zantaz.com; ua0232@zel.zantaz.com,
+dummy@zoo.com,,,ua0213@zel.zantaz.com;ua0233@zel.zantaz.com
+dummy@zoo.com,ua0011@zel.zantaz.com;ua0021@zel.zantaz.com;ua0211@zel.zantaz.com;ua0221@zel.zantaz.com,,
+dummy@zoo.com,,ua0012@zel.zantaz.com; ua0212@zel.zantaz.com; ua0022@zel.zantaz.com; ua0222@zel.zantaz.com,
+dummy@zoo.com,,,ua0013@zel.zantaz.com; ua0213@zel.zantaz.com; ua0023@zel.zantaz.com;ua0223@zel.zantaz.com
+dummy@zoo.com,ua0011@zel.zantaz.com,ua0012@zel.zantaz.com,ua0013@zel.zantaz.com
+dummy@zoo.com,ua0211@zel.zantaz.com,ua0212@zel.zantaz.com,ua0213@zel.zantaz.com
+dummy@zoo.com,ua0021@zel.zantaz.com; ua0221@zel.zantaz.com,ua0022@zel.zantaz.com; ua0222@zel.zantaz.com,ua0023@zel.zantaz.com;ua0223@zel.zantaz.com
+dummy@zoo.com,ua0011@zel.zantaz.com;ua0021@zel.zantaz.com;ua0211@zel.zantaz.com;ua0221@zel.zantaz.com,ua0012@zel.zantaz.com;ua0022@zel.zantaz.com;ua0212@zel.zantaz.com;ua0222@zel.zantaz.com,ua0013@zel.zantaz.com;ua0023@zel.zantaz.com;ua0213@zel.zantaz.com; ua0223@zel.zantaz.com
+dummy@zoo.com,GroupA1@zel.zantaz.com,,
+dummy@zoo.com,,GroupA2@zel.zantaz.com,
+dummy@zoo.com,,,GroupA3@zel.zantaz.com
+dummy@zoo.com,groupB1@zel.zantaz.com,,
+dummy@zoo.com,,groupB2@zel.zantaz.com,
+dummy@zoo.com,,,groupB3@zel.zantaz.com
+dummy@zoo.com,GroupA1@zel.zantaz.com; groupB1@zel.zantaz.com,,
+dummy@zoo.com,,groupB2@zel.zantaz.com; GroupA2@zel.zantaz.com,
+dummy@zoo.com,,,GroupA3@zel.zantaz.com; groupB3@zel.zantaz.com
+dummy@zoo.com,GroupA3@zel.zantaz.com,groupA4@zel.zantaz.com,groupA5@zel.zantaz.com
+dummy@zoo.com,groupB3@zel.zantaz.com,groupB4@zel.zantaz.com,groupB5@zel.zantaz.com
+dummy@zoo.com,GroupA3@zel.zantaz.com; groupB3@zel.zantaz.com,groupA4@zel.zantaz.com;groupB4@zel.zantaz.com,groupA5@zel.zantaz.com;groupB5@zel.zantaz.com
+dummy@zoo.com,GroupA1@zel.zantaz.com;groupB2@zel.zantaz.com;groupA4@zel.zantaz.com,GroupA2@zel.zantaz.com;groupA5@zel.zantaz.com;groupB2@zel.zantaz.com,GroupA3@zel.zantaz.com; groupB1@zel.zantaz.com;groupB4@zel.zantaz.com
+dummy@zoo.com,ua0011@zel.zantaz.com;GroupA2@zel.zantaz.com,ua0012@zel.zantaz.com; GroupA3@zel.zantaz.com,ua0013@zel.zantaz.com; groupA4@zel.zantaz.com
+dummy@zoo.com,GroupA1@zel.zantaz.com;ua0211@zel.zantaz.com,GroupA2@zel.zantaz.com; ua0212@zel.zantaz.com,GroupA3@zel.zantaz.com; ua0213@zel.zantaz.com
+dummy@zoo.com,ua0021@zel.zantaz.com; GroupA3@zel.zantaz.com;ua0221@zel.zantaz.com,ua0022@zel.zantaz.com;groupA4@zel.zantaz.com;ua0222@zel.zantaz.com,ua0023@zel.zantaz.com;groupA5@zel.zantaz.com;ua0223@zel.zantaz.com
+dummy@zoo.com,ua0021@zel.zantaz.com; groupB1@zel.zantaz.com,ua0022@zel.zantaz.com;groupB2@zel.zantaz.com,ua0023@zel.zantaz.com;groupB3@zel.zantaz.com
+dummy@zoo.com,ua0211@zel.zantaz.com;groupB3@zel.zantaz.com,ua0212@zel.zantaz.com;groupB4@zel.zantaz.com,ua0213@zel.zantaz.com;groupB5@zel.zantaz.com
+dummy@zoo.com,ua0031@zel.zantaz.com;ua0211@zel.zantaz.com;groupB5@zel.zantaz.com,ua0032@zel.zantaz.com;ua0212@zel.zantaz.com;groupB3@zel.zantaz.com,ua0033@zel.zantaz.com;ua0213@zel.zantaz.com;groupB4@zel.zantaz.com
+dummy@zoo.com,ua0011@zel.zantaz.com;groupA5@zel.zantaz.com;groupB1@zel.zantaz.com,ua0012@zel.zantaz.com;groupA4@zel.zantaz.com;groupB2@zel.zantaz.com,ua0013@zel.zantaz.com;GroupA3@zel.zantaz.com;groupB3@zel.zantaz.com
+dummy@zoo.com,GroupA1@zel.zantaz.com;groupB4@zel.zantaz.com;ua0211@zel.zantaz.com,GroupA2@zel.zantaz.com;GroupA3@zel.zantaz.com;ua0212@zel.zantaz.com,GroupA3@zel.zantaz.com;groupB2@zel.zantaz.com;ua0213@zel.zantaz.com
+dummy@zoo.com,ua0021@zel.zantaz.com;GroupA3@zel.zantaz.com;ua0211@zel.zantaz.com;groupB3@zel.zantaz.com,ua0022@zel.zantaz.com;groupA4@zel.zantaz.com;ua0212@zel.zantaz.com;groupB4@zel.zantaz.com,ua0022@zel.zantaz.com;groupA5@zel.zantaz.com;ua0213@zel.zantaz.com;groupB5@zel.zantaz.com
+dummy@zoo.com,ua0021@zel.zantaz.com,ua0022@zel.zantaz.com,ua0023@zel.zantaz.com
+dummy@zoo.com,ua0221@zel.zantaz.com,ua0222@zel.zantaz.com,ua0223@zel.zantaz.com
+dummy@zoo.com,ua0021@zel.zantaz.com;ua0221@zel.zantaz.com,ua0022@zel.zantaz.com;ua0222@zel.zantaz.com,ua0023@zel.zantaz.com;ua0223@zel.zantaz.com
+dummy@zoo.com,ua0021@zel.zantaz.com;ua0031@zel.zantaz.com,ua0022@zel.zantaz.com;ua0032@zel.zantaz.com,ua0023@zel.zantaz.com;ua0033@zel.zantaz.com
+dummy@zoo.com,ua0221@zel.zantaz.com;ua0231@zel.zantaz.com,ua0222@zel.zantaz.com; ua0232@zel.zantaz.com,ua0223@zel.zantaz.com; ua0233@zel.zantaz.com
+dummy@zoo.com,ua0011@zel.zantaz.com;ua0021@zel.zantaz.com;ua0221@zel.zantaz.com;ua0231@zel.zantaz.com,ua0012@zel.zantaz.com;ua0022@zel.zantaz.com;ua0222@zel.zantaz.com;ua0232@zel.zantaz.com,ua0013@zel.zantaz.com;ua0023@zel.zantaz.com;ua0223@zel.zantaz.com;ua0233@zel.zantaz.com
+dummy@zoo.com,GroupA1@zel.zantaz.com,GroupA2@zel.zantaz.com,GroupA3@zel.zantaz.com
+dummy@zoo.com,groupB1@zel.zantaz.com,groupB2@zel.zantaz.com,groupB3@zel.zantaz.com
+dummy@zoo.com,GroupA1@zel.zantaz.com;groupB1@zel.zantaz.com,GroupA2@zel.zantaz.com;groupB2@zel.zantaz.com,GroupA3@zel.zantaz.com; groupB3@zel.zantaz.com
+dummy@zoo.com,GroupA1@zel.zantaz.com;groupA4@zel.zantaz.com,GroupA2@zel.zantaz.com;groupA5@zel.zantaz.com,GroupA3@zel.zantaz.com
+dummy@zoo.com,groupB1@zel.zantaz.com;groupB4@zel.zantaz.com,groupB2@zel.zantaz.com; groupB5@zel.zantaz.com,groupB3@zel.zantaz.com
+dummy@zoo.com,groupA5@zel.zantaz.com; groupB2@zel.zantaz.com,GroupA2@zel.zantaz.com;groupB3@zel.zantaz.com,groupB4@zel.zantaz.com;GroupA1@zel.zantaz.com
+dummy@zoo.com,GroupA1@zel.zantaz.com; GroupA2@zel.zantaz.com; groupB2@zel.zantaz.com,,GroupA3@zel.zantaz.com;groupB3@zel.zantaz.com;groupB4@zel.zantaz.com;groupA5@zel.zantaz.com
+dummy@zoo.com,ua0011@zel.zantaz.com;GroupA2@zel.zantaz.com,ua0012@zel.zantaz.com; GroupA2@zel.zantaz.com,ua0013@zel.zantaz.com; groupA4@zel.zantaz.com
+dummy@zoo.com,GroupA1@zel.zantaz.com;ua0211@zel.zantaz.com,GroupA2@zel.zantaz.com;ua0212@zel.zantaz.com,GroupA3@zel.zantaz.com;ua0213@zel.zantaz.com
+dummy@zoo.com,ua0021@zel.zantaz.com; ua0221@zel.zantaz.com; GroupA3@zel.zantaz.com,ua0022@zel.zantaz.com;ua0222@zel.zantaz.com;groupA4@zel.zantaz.com,ua0023@zel.zantaz.com;ua0223@zel.zantaz.com;groupA5@zel.zantaz.com
+dummy@zoo.com,ua0021@zel.zantaz.com;groupB1@zel.zantaz.com,ua0022@zel.zantaz.com; groupB2@zel.zantaz.com,ua0023@zel.zantaz.com; groupB3@zel.zantaz.com
+dummy@zoo.com,ua0211@zel.zantaz.com; groupB3@zel.zantaz.com,ua0212@zel.zantaz.com; groupB4@zel.zantaz.com,ua0213@zel.zantaz.com; groupB5@zel.zantaz.com
+dummy@zoo.com,ua0031@zel.zantaz.com;ua0211@zel.zantaz.com;groupB5@zel.zantaz.com,ua0032@zel.zantaz.com;ua0212@zel.zantaz.com;groupB3@zel.zantaz.com,ua0033@zel.zantaz.com;ua0213@zel.zantaz.com;groupB4@zel.zantaz.com
+dummy@zoo.com,ua0011@zel.zantaz.com;groupA5@zel.zantaz.com;groupB1@zel.zantaz.com,ua0012@zel.zantaz.com;groupA4@zel.zantaz.com;groupB2@zel.zantaz.com,ua0013@zel.zantaz.com;GroupA3@zel.zantaz.com;groupB3@zel.zantaz.com
+dummy@zoo.com,GroupA1@zel.zantaz.com;ua0211@zel.zantaz.com;groupB4@zel.zantaz.com,GroupA2@zel.zantaz.com; ua0212@zel.zantaz.com; groupB3@zel.zantaz.com,GroupA3@zel.zantaz.com;ua0213@zel.zantaz.com; groupB2@zel.zantaz.com
+dummy@zoo.com,ua0021@zel.zantaz.com;GroupA3@zel.zantaz.com;ua0211@zel.zantaz.com;groupB3@zel.zantaz.com,ua0022@zel.zantaz.com;groupA4@zel.zantaz.com;ua0212@zel.zantaz.com;groupB4@zel.zantaz.com,ua0223@zel.zantaz.com;groupA5@zel.zantaz.com; ua0213@zel.zantaz.com;groupB5@zel.zantaz.com
+dummy@zoo.com,,ua0012@zel.zantaz.com,ua0013@zel.zantaz.com
+dummy@zoo.com,,ua0212@zel.zantaz.com,ua0213@zel.zantaz.com
+dummy@zoo.com,,ua0022@zel.zantaz.com; ua0222@zel.zantaz.com,ua0023@zel.zantaz.com;ua0223@zel.zantaz.com
+dummy@zoo.com,,ua0012@zel.zantaz.com;ua0022@zel.zantaz.com;ua0212@zel.zantaz.com;ua0222@zel.zantaz.com,ua0013@zel.zantaz.com;ua0023@zel.zantaz.com;ua0213@zel.zantaz.com; ua0223@zel.zantaz.com
+dummy@zoo.com,ua0011@zel.zantaz.com,,ua0013@zel.zantaz.com
+dummy@zoo.com,ua0211@zel.zantaz.com,,ua0213@zel.zantaz.com
+dummy@zoo.com,ua0021@zel.zantaz.com; ua0221@zel.zantaz.com,,ua0023@zel.zantaz.com;ua0223@zel.zantaz.com
+dummy@zoo.com,ua0011@zel.zantaz.com;ua0021@zel.zantaz.com;ua0211@zel.zantaz.com;ua0221@zel.zantaz.com,,ua0013@zel.zantaz.com;ua0023@zel.zantaz.com;ua0213@zel.zantaz.com; ua0223@zel.zantaz.com
+dummy@zoo.com,ua0011@zel.zantaz.com,ua0012@zel.zantaz.com,
+dummy@zoo.com,ua0211@zel.zantaz.com,ua0212@zel.zantaz.com,
+dummy@zoo.com,ua0021@zel.zantaz.com; ua0221@zel.zantaz.com,ua0022@zel.zantaz.com; ua0222@zel.zantaz.com,
+dummy@zoo.com,ua0011@zel.zantaz.com;ua0021@zel.zantaz.com;ua0211@zel.zantaz.com;ua0221@zel.zantaz.com,ua0012@zel.zantaz.com;ua0022@zel.zantaz.com;ua0212@zel.zantaz.com;ua0222@zel.zantaz.com,
+dummy@zoo.com,,groupA4@zel.zantaz.com,groupA5@zel.zantaz.com
+dummy@zoo.com,,groupB4@zel.zantaz.com,groupB5@zel.zantaz.com
+dummy@zoo.com,,groupA4@zel.zantaz.com;groupB4@zel.zantaz.com,groupA5@zel.zantaz.com;groupB5@zel.zantaz.com
+dummy@zoo.com,,GroupA2@zel.zantaz.com;groupA5@zel.zantaz.com;groupB2@zel.zantaz.com,GroupA3@zel.zantaz.com; groupB1@zel.zantaz.com;groupB4@zel.zantaz.com
+dummy@zoo.com,GroupA3@zel.zantaz.com,,groupA5@zel.zantaz.com
+dummy@zoo.com,groupB3@zel.zantaz.com,,groupB5@zel.zantaz.com
+dummy@zoo.com,GroupA3@zel.zantaz.com; groupB3@zel.zantaz.com,,groupA5@zel.zantaz.com;groupB5@zel.zantaz.com
+dummy@zoo.com,GroupA1@zel.zantaz.com;groupB2@zel.zantaz.com;groupA4@zel.zantaz.com,,GroupA3@zel.zantaz.com; groupB1@zel.zantaz.com;groupB4@zel.zantaz.com
+dummy@zoo.com,GroupA3@zel.zantaz.com,groupA4@zel.zantaz.com,
+dummy@zoo.com,groupB3@zel.zantaz.com,groupB4@zel.zantaz.com,
+dummy@zoo.com,GroupA3@zel.zantaz.com; groupB3@zel.zantaz.com,groupA4@zel.zantaz.com;groupB4@zel.zantaz.com,
+dummy@zoo.com,GroupA1@zel.zantaz.com;groupB2@zel.zantaz.com;groupA4@zel.zantaz.com,GroupA2@zel.zantaz.com;groupA5@zel.zantaz.com;groupB2@zel.zantaz.com,
+dummy@zoo.com,,ua0022@zel.zantaz.com;ua0222@zel.zantaz.com,ua0023@zel.zantaz.com;ua0223@zel.zantaz.com
+dummy@zoo.com,,ua0022@zel.zantaz.com;ua0032@zel.zantaz.com,ua0023@zel.zantaz.com;ua0033@zel.zantaz.com
+dummy@zoo.com,,ua0222@zel.zantaz.com; ua0232@zel.zantaz.com,ua0223@zel.zantaz.com; ua0233@zel.zantaz.com
+dummy@zoo.com,,ua0012@zel.zantaz.com;ua0022@zel.zantaz.com;ua0222@zel.zantaz.com;ua0232@zel.zantaz.com,ua0013@zel.zantaz.com;ua0023@zel.zantaz.com;ua0223@zel.zantaz.com;ua0233@zel.zantaz.com
+dummy@zoo.com,ua0021@zel.zantaz.com;ua0221@zel.zantaz.com,,ua0023@zel.zantaz.com;ua0223@zel.zantaz.com
+dummy@zoo.com,ua0021@zel.zantaz.com;ua0031@zel.zantaz.com,,ua0023@zel.zantaz.com;ua0033@zel.zantaz.com
+dummy@zoo.com,ua0221@zel.zantaz.com;ua0231@zel.zantaz.com,,ua0223@zel.zantaz.com; ua0233@zel.zantaz.com
+dummy@zoo.com,ua0011@zel.zantaz.com;ua0021@zel.zantaz.com;ua0221@zel.zantaz.com;ua0231@zel.zantaz.com,,ua0013@zel.zantaz.com;ua0023@zel.zantaz.com;ua0223@zel.zantaz.com;ua0233@zel.zantaz.com
+dummy@zoo.com,ua0021@zel.zantaz.com;ua0221@zel.zantaz.com,ua0022@zel.zantaz.com;ua0222@zel.zantaz.com,
+dummy@zoo.com,ua0021@zel.zantaz.com;ua0031@zel.zantaz.com,ua0022@zel.zantaz.com;ua0032@zel.zantaz.com,
+dummy@zoo.com,ua0221@zel.zantaz.com;ua0231@zel.zantaz.com,ua0222@zel.zantaz.com; ua0232@zel.zantaz.com,
+dummy@zoo.com,ua0011@zel.zantaz.com;ua0021@zel.zantaz.com;ua0221@zel.zantaz.com;ua0231@zel.zantaz.com,ua0012@zel.zantaz.com;ua0022@zel.zantaz.com;ua0222@zel.zantaz.com;ua0232@zel.zantaz.com,
+dummy@zoo.com,ua0111@zel.zantaz.com,GroupA1@zel.zantaz.com,GroupB1@zel.zantaz.com
+dummy@zoo.com,ua0112@zel.zantaz.com,GroupC1@zel.zantaz.com,GroupD1@zel.zantaz.com
+dummy@zoo.com,ua0112@zel.zantaz.com,GroupA5@zel.zantaz.com,GroupD1@zel.zantaz.com
+dummy@zoo.com,ua0112@zel.zantaz.com,nobody1@zel.zantaz.com,nobody2@zel.zantaz.com

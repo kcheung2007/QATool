@@ -1,0 +1,23 @@
+A Ting <ting@company.com>
+B Dong <dong@company.com>, Ling <ling@company.com>
+C Ling <ling@company.com>, Dong <dong@company.com>, Ting <ting@company.com>
+D Dong_Ling <Dong_Ling@company.com>
+E Ling Dong <dong-ling@company.com>
+F dong dong <Dong.Ling@company.com>
+G Tingling <Tingling@company.com>, dongdong <dong@company.com>
+H ting ling <Ting_Ling@company.com>, dong ting <Ting-Dong@company.com>
+I Ling-Ting <Ting-Ling@company.com>, Ting.ting <Ting.Dong@company.com>
+J Ling Ling <ting.ling@company.com>, Ting Dong <ting_dong@company.com>
+K John <John@company1.com>
+L John <John@company2.com>
+M John <John@company3.com>, johnny <johnny@company3.com>
+N Johnny <Johnny@company1.com>
+O Johnny <Johnny2@company2.com>
+P Johnny <Johnny3@company3.com>
+Q Johnnie <Johnnie@company4.com>
+R Joh <Joh@company.com>
+S Joh <Joh@company2.com>, Johnny <Johnny@company1.com>
+T joe <joe@joe.com>, Joh <Joh@company2.com>, Johnny <Johnny@company1.com>
+X <ting@company.com>
+Y <dong@company.com>
+Z <ling@company.com>

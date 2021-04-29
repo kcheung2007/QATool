@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0A95F2A3-F82F-4D24-82C4-F05DE3F957FD}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <AssemblyKeyContainerName />
+    <AssemblyName>QATool</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QATool</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB">
+      <Guid>{00000205-0000-0010-8000-00AA006D2EA4}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+    <COMReference Include="CDO">
+      <Guid>{CD000000-8B95-11D1-82DB-00C04FB1625D}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="Domino">
+      <Guid>{29131520-2EED-1069-BF5D-00DD011186B7}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="MAPI">
+      <Guid>{3FA7DEA7-6438-101B-ACC1-00AA00423326}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>21</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+    <COMReference Include="Office">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="Outlook">
+      <Guid>{00062FFF-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>9</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+    <Reference Include="MySql.Data">
+      <Name>MySql.Data</Name>
+      <HintPath>extDLL\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.DirectoryServices">
+      <Name>System.DirectoryServices</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ACTestPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AttachObj.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BatMailPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CheckerWnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSetHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DBMailPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FtpClient.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GUITestPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MailPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NotesClient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NSFCounter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="olMailObj.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OutlookPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Performance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PstCounter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SMTPSender.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Template.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ToolBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ucFTPClient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucMRVP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="URLDataObj.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ZelMsgPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ZelVarDataObj.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="App.ico" />
+    <EmbeddedResource Include="ACTestPage.resx">
+      <DependentUpon>ACTestPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BatMailPage.resx">
+      <DependentUpon>BatMailPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckerWnd.resx">
+      <DependentUpon>CheckerWnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBMailPage.resx">
+      <DependentUpon>DBMailPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUITestPage.resx">
+      <DependentUpon>GUITestPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MailPage.resx">
+      <DependentUpon>MailPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotesClient.resx">
+      <DependentUpon>NotesClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NSFCounter.resx">
+      <DependentUpon>NSFCounter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutlookPage.resx">
+      <DependentUpon>OutlookPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Performance.resx">
+      <DependentUpon>Performance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PstCounter.resx">
+      <DependentUpon>PstCounter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Template.resx">
+      <DependentUpon>Template.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolBox.resx">
+      <DependentUpon>ToolBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucFTPClient.resx">
+      <DependentUpon>ucFTPClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucMRVP.resx">
+      <DependentUpon>ucMRVP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZelMsgPage.resx">
+      <DependentUpon>ZelMsgPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>
