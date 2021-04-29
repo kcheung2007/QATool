@@ -1,0 +1,13 @@
+# TO, CC, BCC, profile, password
+duser11@monkey.com, duser12@monkey.com, duser13@monkey.com, duser11, password0
+duser21@monkey.com;duser31@monkey.com, duser22@monkey.com;duser32@monkey.com, duser23@monkey.com;duser33@monkey.com, duser11, password0
+group1@monkey.com, group2@monkey.com, group3@monkey.com, duser11, password0
+group2@monkey.com;group5@monkey.com, group3@monkey.com, group4@monkey.com, duser11, password0
+group2@monkey.com, group3@monkey.com;group5@monkey.com, group4@monkey.com, duser11, password0
+duser12@monkey.com;duser22@monkey.com;group4@monkey.com, group3@monkey.com, duser23@monkey.com;group5@monkey.com, duser11, password0
+duser11@monkey.com;group5@monkey.com, duser12@monkey.com;duser21@monkey.com, duser13@monkey.com;duser23@monkey.com;group3@monkey.com, duser22, password0
+group1@monkey.com;duser21@monkey.com;duser31@monkey.com, duser22@monkey.com;duser32@monkey.com, duser23@monkey.com;duser33@monkey.com;group5@monkey.com, duser51, password0
+group4@monkey.com, group5@monkey.com, duser22@monkey.com, duser32, password0
+group1@monkey.com;group5@monkey.com, group2@monkey.com, group3@monkey.com, duser41, password0
+duser21@monkey.com;group3@monkey.com, duser22@monkey.com;duser41@monkey.com,duser23@monkey.com, duser51, password0
+duser51@monkey.com, duser41@monkey.com, duser31@monkey.com, duser21, password0

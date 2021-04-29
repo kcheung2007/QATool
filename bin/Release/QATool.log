@@ -1,0 +1,748 @@
+Log: 11:47:58 AM 4/29/2005Create MRVP Page
+Log: 11:47:58 AM 4/29/2005Create Mail Page
+Log: 11:47:58 AM 4/29/2005Create Batch Mail Page
+Log: 11:47:59 AM 4/29/2005Create ZEL Message Mail Page
+Log: 11:47:59 AM 4/29/2005Create PST Counter Page
+Log: 11:47:59 AM 4/29/2005Create NSF Counter Page
+Log: 11:47:59 AM 4/29/2005Create DB Mail Page
+Log: 11:48:00 AM 4/29/2005Create GUI Test Page
+Log: 11:48:00 AM 4/29/2005Create Audit Template Page
+Log: 11:48:00 AM 4/29/2005Create Audit Center Test Page
+Log: 11:48:00 AM 4/29/2005Create Outlook Page
+Log: 11:48:00 AM 4/29/2005Create Lotus Notes Page
+Log: 11:48:36 AM 4/29/2005Quit outlook
+Log: 11:49:25 AM 4/29/2005Quit outlook
+Log: 11:49:43 AM 4/29/2005MainForm.cs - ToolBox_Closed... Application Exit...
+Log: 11:49:43 AM 4/29/2005End of QATool - Execute Dispose
+Log: 11:49:43 AM 4/29/2005MailPage.cs - Deposing MailPage Object
+Log: 11:49:43 AM 4/29/2005	 Dispose component
+Log: 11:49:43 AM 4/29/2005BatMailPage.cs - Deposing BatMailPage Object
+Log: 11:49:43 AM 4/29/2005	Dispose BatMailPage component
+Log: 11:49:43 AM 4/29/2005QATool.cs - Depose Object
+Log: 11:49:43 AM 4/29/2005	Dispose ZelMsgPage component
+Log: 11:49:43 AM 4/29/2005	 - finished disposing: three steps
+Log: 11:52:17 AM 4/29/2005Create MRVP Page
+Log: 11:52:17 AM 4/29/2005Create Mail Page
+Log: 11:52:18 AM 4/29/2005Create Batch Mail Page
+Log: 11:52:18 AM 4/29/2005Create ZEL Message Mail Page
+Log: 11:52:19 AM 4/29/2005Create PST Counter Page
+Log: 11:52:19 AM 4/29/2005Create NSF Counter Page
+Log: 11:52:19 AM 4/29/2005Create DB Mail Page
+Log: 11:52:19 AM 4/29/2005Create GUI Test Page
+Log: 11:52:19 AM 4/29/2005Create Audit Template Page
+Log: 11:52:19 AM 4/29/2005Create Audit Center Test Page
+Log: 11:52:19 AM 4/29/2005Create Outlook Page
+Log: 11:52:20 AM 4/29/2005Create Lotus Notes Page
+Log: 11:52:47 AM 4/29/2005Thread was being aborted.
+System.Threading.ThreadAbortException   at System.Data.DataTable.InsertRow(DataRow row, Int32 proposedID, Int32 pos)
+   at System.Data.DataTable.AddRow(DataRow row, Int32 proposedID)
+   at System.Data.DataRowCollection.Add(DataRow row)
+   at QATool.PstCounter.CreatePstCountTable()
+   at QATool.PstCounter.Thd_PstInFolder()
+Log: 11:52:49 AM 4/29/2005Quit outlook
+Log: 11:53:01 AM 4/29/2005MainForm.cs - ToolBox_Closed... Application Exit...
+Log: 11:53:01 AM 4/29/2005End of QATool - Execute Dispose
+Log: 11:53:01 AM 4/29/2005MailPage.cs - Deposing MailPage Object
+Log: 11:53:01 AM 4/29/2005	 Dispose component
+Log: 11:53:01 AM 4/29/2005BatMailPage.cs - Deposing BatMailPage Object
+Log: 11:53:01 AM 4/29/2005	Dispose BatMailPage component
+Log: 11:53:01 AM 4/29/2005QATool.cs - Depose Object
+Log: 11:53:01 AM 4/29/2005	Dispose ZelMsgPage component
+Log: 11:53:01 AM 4/29/2005	 - finished disposing: three steps
+Log: 11:55:45 AM 4/29/2005Create MRVP Page
+Log: 11:55:45 AM 4/29/2005Create Mail Page
+Log: 11:55:45 AM 4/29/2005Create Batch Mail Page
+Log: 11:55:46 AM 4/29/2005Create ZEL Message Mail Page
+Log: 11:55:46 AM 4/29/2005Create PST Counter Page
+Log: 11:55:46 AM 4/29/2005Create NSF Counter Page
+Log: 11:55:46 AM 4/29/2005Create DB Mail Page
+Log: 11:55:47 AM 4/29/2005Create GUI Test Page
+Log: 11:55:47 AM 4/29/2005Create Audit Template Page
+Log: 11:55:47 AM 4/29/2005Create Audit Center Test Page
+Log: 11:55:47 AM 4/29/2005Create Outlook Page
+Log: 11:55:47 AM 4/29/2005Create Lotus Notes Page
+Log: 11:56:18 AM 4/29/2005Thread was being aborted.
+System.Threading.ThreadAbortException   at System.Data.DataTable.InsertRow(DataRow row, Int32 proposedID, Int32 pos)
+   at System.Data.DataTable.AddRow(DataRow row, Int32 proposedID)
+   at System.Data.DataRowCollection.Add(DataRow row)
+   at QATool.PstCounter.CreatePstCountTable()
+   at QATool.PstCounter.Thd_PstInFolder()
+Log: 11:56:19 AM 4/29/2005Quit outlook
+Log: 11:56:26 AM 4/29/2005MainForm.cs - ToolBox_Closed... Application Exit...
+Log: 11:56:26 AM 4/29/2005End of QATool - Execute Dispose
+Log: 11:56:26 AM 4/29/2005MailPage.cs - Deposing MailPage Object
+Log: 11:56:26 AM 4/29/2005	 Dispose component
+Log: 11:56:26 AM 4/29/2005BatMailPage.cs - Deposing BatMailPage Object
+Log: 11:56:26 AM 4/29/2005	Dispose BatMailPage component
+Log: 11:56:26 AM 4/29/2005QATool.cs - Depose Object
+Log: 11:56:26 AM 4/29/2005	Dispose ZelMsgPage component
+Log: 11:56:26 AM 4/29/2005	 - finished disposing: three steps
+Log: 11:57:31 AM 4/29/2005Create MRVP Page
+Log: 11:57:31 AM 4/29/2005Create Mail Page
+Log: 11:57:32 AM 4/29/2005Create Batch Mail Page
+Log: 11:57:32 AM 4/29/2005Create ZEL Message Mail Page
+Log: 11:57:33 AM 4/29/2005Create PST Counter Page
+Log: 11:57:33 AM 4/29/2005Create NSF Counter Page
+Log: 11:57:33 AM 4/29/2005Create DB Mail Page
+Log: 11:57:33 AM 4/29/2005Create GUI Test Page
+Log: 11:57:33 AM 4/29/2005Create Audit Template Page
+Log: 11:57:33 AM 4/29/2005Create Audit Center Test Page
+Log: 11:57:33 AM 4/29/2005Create Outlook Page
+Log: 11:57:33 AM 4/29/2005Create Lotus Notes Page
+Log: 11:58:06 AM 4/29/2005Quit outlook
+Log: 11:58:23 AM 4/29/2005Quit outlook
+Log: 11:58:27 AM 4/29/2005MainForm.cs - ToolBox_Closed... Application Exit...
+Log: 11:58:27 AM 4/29/2005End of QATool - Execute Dispose
+Log: 11:58:28 AM 4/29/2005MailPage.cs - Deposing MailPage Object
+Log: 11:58:28 AM 4/29/2005	 Dispose component
+Log: 11:58:28 AM 4/29/2005BatMailPage.cs - Deposing BatMailPage Object
+Log: 11:58:28 AM 4/29/2005	Dispose BatMailPage component
+Log: 11:58:28 AM 4/29/2005QATool.cs - Depose Object
+Log: 11:58:28 AM 4/29/2005	Dispose ZelMsgPage component
+Log: 11:58:28 AM 4/29/2005	 - finished disposing: three steps
+Log: 3:55:13 PM 4/29/2005Create MRVP Page
+Log: 3:55:13 PM 4/29/2005Create Mail Page
+Log: 3:55:13 PM 4/29/2005Create Batch Mail Page
+Log: 3:55:13 PM 4/29/2005Create ZEL Message Mail Page
+Log: 3:55:13 PM 4/29/2005Create PST Counter Page
+Log: 3:55:13 PM 4/29/2005Create NSF Counter Page
+Log: 3:55:13 PM 4/29/2005Create DB Mail Page
+Log: 3:55:13 PM 4/29/2005Create GUI Test Page
+Log: 3:55:13 PM 4/29/2005Create Audit Template Page
+Log: 3:55:13 PM 4/29/2005Create Audit Center Test Page
+Log: 3:55:14 PM 4/29/2005Create Outlook Page
+Log: 3:55:14 PM 4/29/2005Create Lotus Notes Page
+Log: 3:57:54 PM 4/29/2005Quit outlook
+Log: 4:01:53 PM 4/29/2005MainForm.cs - ToolBox_Closed... Application Exit...
+Log: 4:01:53 PM 4/29/2005End of QATool - Execute Dispose
+Log: 4:01:53 PM 4/29/2005MailPage.cs - Deposing MailPage Object
+Log: 4:01:53 PM 4/29/2005	 Dispose component
+Log: 4:01:53 PM 4/29/2005BatMailPage.cs - Deposing BatMailPage Object
+Log: 4:01:53 PM 4/29/2005	Dispose BatMailPage component
+Log: 4:01:53 PM 4/29/2005QATool.cs - Depose Object
+Log: 4:01:53 PM 4/29/2005	Dispose ZelMsgPage component
+Log: 4:01:54 PM 4/29/2005	 - finished disposing: three steps
+Log: 4:51:13 PM 4/29/2005Create MRVP Page
+Log: 4:51:13 PM 4/29/2005Create Mail Page
+Log: 4:51:14 PM 4/29/2005Create Batch Mail Page
+Log: 4:51:14 PM 4/29/2005Create ZEL Message Mail Page
+Log: 4:51:15 PM 4/29/2005Create PST Counter Page
+Log: 4:51:15 PM 4/29/2005Create NSF Counter Page
+Log: 4:51:15 PM 4/29/2005Create DB Mail Page
+Log: 4:51:15 PM 4/29/2005Create GUI Test Page
+Log: 4:51:15 PM 4/29/2005Create Audit Template Page
+Log: 4:51:15 PM 4/29/2005Create Audit Center Test Page
+Log: 4:51:16 PM 4/29/2005Create Outlook Page
+Log: 4:51:16 PM 4/29/2005Create Lotus Notes Page
+Log: 4:51:51 PM 4/29/2005Object reference not set to an instance of an object.
+System.NullReferenceException   at QATool.PstCounter.CreatePstCountTable()
+   at QATool.PstCounter.btnCountIt_Click(Object sender, EventArgs e)
+Log: 4:52:05 PM 4/29/2005Quit outlook
+Log: 4:53:39 PM 4/29/2005Quit outlook
+Log: 4:53:46 PM 4/29/2005MainForm.cs - ToolBox_Closed... Application Exit...
+Log: 4:53:46 PM 4/29/2005End of QATool - Execute Dispose
+Log: 4:53:46 PM 4/29/2005MailPage.cs - Deposing MailPage Object
+Log: 4:53:46 PM 4/29/2005	 Dispose component
+Log: 4:53:46 PM 4/29/2005BatMailPage.cs - Deposing BatMailPage Object
+Log: 4:53:46 PM 4/29/2005	Dispose BatMailPage component
+Log: 4:53:46 PM 4/29/2005QATool.cs - Depose Object
+Log: 4:53:46 PM 4/29/2005	Dispose ZelMsgPage component
+Log: 4:53:46 PM 4/29/2005	 - finished disposing: three steps
+Log: 4:55:34 PM 4/29/2005Create MRVP Page
+Log: 4:55:34 PM 4/29/2005Create Mail Page
+Log: 4:55:34 PM 4/29/2005Create Batch Mail Page
+Log: 4:55:35 PM 4/29/2005Create ZEL Message Mail Page
+Log: 4:55:35 PM 4/29/2005Create PST Counter Page
+Log: 4:55:35 PM 4/29/2005Create NSF Counter Page
+Log: 4:55:35 PM 4/29/2005Create DB Mail Page
+Log: 4:55:35 PM 4/29/2005Create GUI Test Page
+Log: 4:55:36 PM 4/29/2005Create Audit Template Page
+Log: 4:55:36 PM 4/29/2005Create Audit Center Test Page
+Log: 4:55:36 PM 4/29/2005Create Outlook Page
+Log: 4:55:36 PM 4/29/2005Create Lotus Notes Page
+Log: 4:57:04 PM 4/29/2005Object reference not set to an instance of an object.
+System.NullReferenceException   at QATool.PstCounter.CreatePstCountTable()
+   at QATool.PstCounter.btnCountIt_Click(Object sender, EventArgs e)
+Log: 4:57:06 PM 4/29/2005Quit outlook
+Log: 4:57:12 PM 4/29/2005MainForm.cs - ToolBox_Closed... Application Exit...
+Log: 4:57:12 PM 4/29/2005End of QATool - Execute Dispose
+Log: 4:57:12 PM 4/29/2005MailPage.cs - Deposing MailPage Object
+Log: 4:57:12 PM 4/29/2005	 Dispose component
+Log: 4:57:12 PM 4/29/2005BatMailPage.cs - Deposing BatMailPage Object
+Log: 4:57:12 PM 4/29/2005	Dispose BatMailPage component
+Log: 4:57:12 PM 4/29/2005QATool.cs - Depose Object
+Log: 4:57:12 PM 4/29/2005	Dispose ZelMsgPage component
+Log: 4:57:12 PM 4/29/2005	 - finished disposing: three steps
+Log: 4:59:31 PM 4/29/2005Create MRVP Page
+Log: 4:59:31 PM 4/29/2005Create Mail Page
+Log: 4:59:31 PM 4/29/2005Create Batch Mail Page
+Log: 4:59:32 PM 4/29/2005Create ZEL Message Mail Page
+Log: 4:59:32 PM 4/29/2005Create PST Counter Page
+Log: 4:59:32 PM 4/29/2005Create NSF Counter Page
+Log: 4:59:32 PM 4/29/2005Create DB Mail Page
+Log: 4:59:32 PM 4/29/2005Create GUI Test Page
+Log: 4:59:33 PM 4/29/2005Create Audit Template Page
+Log: 4:59:33 PM 4/29/2005Create Audit Center Test Page
+Log: 4:59:33 PM 4/29/2005Create Outlook Page
+Log: 4:59:33 PM 4/29/2005Create Lotus Notes Page
+Log: 4:59:58 PM 4/29/2005Quit outlook
+Log: 5:00:10 PM 4/29/2005MainForm.cs - ToolBox_Closed... Application Exit...
+Log: 5:00:10 PM 4/29/2005End of QATool - Execute Dispose
+Log: 5:00:10 PM 4/29/2005MailPage.cs - Deposing MailPage Object
+Log: 5:00:10 PM 4/29/2005	 Dispose component
+Log: 5:00:11 PM 4/29/2005BatMailPage.cs - Deposing BatMailPage Object
+Log: 5:00:11 PM 4/29/2005	Dispose BatMailPage component
+Log: 5:00:11 PM 4/29/2005QATool.cs - Depose Object
+Log: 5:00:11 PM 4/29/2005	Dispose ZelMsgPage component
+Log: 5:00:11 PM 4/29/2005	 - finished disposing: three steps
+Log: 5:04:09 PM 4/29/2005Create MRVP Page
+Log: 5:04:09 PM 4/29/2005Create Mail Page
+Log: 5:04:10 PM 4/29/2005Create Batch Mail Page
+Log: 5:04:10 PM 4/29/2005Create ZEL Message Mail Page
+Log: 5:04:11 PM 4/29/2005Create PST Counter Page
+Log: 5:04:11 PM 4/29/2005Create NSF Counter Page
+Log: 5:04:11 PM 4/29/2005Create DB Mail Page
+Log: 5:04:11 PM 4/29/2005Create GUI Test Page
+Log: 5:04:11 PM 4/29/2005Create Audit Template Page
+Log: 5:04:11 PM 4/29/2005Create Audit Center Test Page
+Log: 5:04:11 PM 4/29/2005Create Outlook Page
+Log: 5:04:12 PM 4/29/2005Create Lotus Notes Page
+Log: 5:04:50 PM 4/29/2005Quit outlook
+Log: 5:04:59 PM 4/29/2005Quit outlook
+Log: 5:05:05 PM 4/29/2005MainForm.cs - ToolBox_Closed... Application Exit...
+Log: 5:05:05 PM 4/29/2005End of QATool - Execute Dispose
+Log: 5:05:06 PM 4/29/2005MailPage.cs - Deposing MailPage Object
+Log: 5:05:06 PM 4/29/2005	 Dispose component
+Log: 5:05:06 PM 4/29/2005BatMailPage.cs - Deposing BatMailPage Object
+Log: 5:05:06 PM 4/29/2005	Dispose BatMailPage component
+Log: 5:05:06 PM 4/29/2005QATool.cs - Depose Object
+Log: 5:05:06 PM 4/29/2005	Dispose ZelMsgPage component
+Log: 5:05:06 PM 4/29/2005	 - finished disposing: three steps
+Log: 5:09:07 PM 4/29/2005Create MRVP Page
+Log: 5:09:07 PM 4/29/2005Create Mail Page
+Log: 5:09:08 PM 4/29/2005Create Batch Mail Page
+Log: 5:09:08 PM 4/29/2005Create ZEL Message Mail Page
+Log: 5:09:09 PM 4/29/2005Create PST Counter Page
+Log: 5:09:09 PM 4/29/2005Create NSF Counter Page
+Log: 5:09:09 PM 4/29/2005Create DB Mail Page
+Log: 5:09:09 PM 4/29/2005Create GUI Test Page
+Log: 5:09:09 PM 4/29/2005Create Audit Template Page
+Log: 5:09:09 PM 4/29/2005Create Audit Center Test Page
+Log: 5:09:09 PM 4/29/2005Create Outlook Page
+Log: 5:09:10 PM 4/29/2005Create Lotus Notes Page
+Log: 5:09:55 PM 4/29/2005Quit outlook
+Log: 5:11:11 PM 4/29/2005Quit outlook
+Log: 5:11:47 PM 4/29/2005MainForm.cs - ToolBox_Closed... Application Exit...
+Log: 5:11:47 PM 4/29/2005End of QATool - Execute Dispose
+Log: 5:11:47 PM 4/29/2005MailPage.cs - Deposing MailPage Object
+Log: 5:11:47 PM 4/29/2005	 Dispose component
+Log: 5:11:48 PM 4/29/2005BatMailPage.cs - Deposing BatMailPage Object
+Log: 5:11:48 PM 4/29/2005	Dispose BatMailPage component
+Log: 5:11:48 PM 4/29/2005QATool.cs - Depose Object
+Log: 5:11:48 PM 4/29/2005	Dispose ZelMsgPage component
+Log: 5:11:48 PM 4/29/2005	 - finished disposing: three steps
+Log: 5:13:05 PM 4/29/2005Create MRVP Page
+Log: 5:13:06 PM 4/29/2005Create Mail Page
+Log: 5:13:06 PM 4/29/2005Create Batch Mail Page
+Log: 5:13:06 PM 4/29/2005Create ZEL Message Mail Page
+Log: 5:13:07 PM 4/29/2005Create PST Counter Page
+Log: 5:13:07 PM 4/29/2005Create NSF Counter Page
+Log: 5:13:07 PM 4/29/2005Create DB Mail Page
+Log: 5:13:07 PM 4/29/2005Create GUI Test Page
+Log: 5:13:08 PM 4/29/2005Create Audit Template Page
+Log: 5:13:08 PM 4/29/2005Create Audit Center Test Page
+Log: 5:13:08 PM 4/29/2005Create Outlook Page
+Log: 5:13:08 PM 4/29/2005Create Lotus Notes Page
+Log: 5:13:34 PM 4/29/2005Quit outlook
+Log: 5:13:47 PM 4/29/2005MainForm.cs - ToolBox_Closed... Application Exit...
+Log: 5:13:47 PM 4/29/2005End of QATool - Execute Dispose
+Log: 5:13:48 PM 4/29/2005MailPage.cs - Deposing MailPage Object
+Log: 5:13:48 PM 4/29/2005	 Dispose component
+Log: 5:13:48 PM 4/29/2005BatMailPage.cs - Deposing BatMailPage Object
+Log: 5:13:48 PM 4/29/2005	Dispose BatMailPage component
+Log: 5:13:48 PM 4/29/2005QATool.cs - Depose Object
+Log: 5:13:48 PM 4/29/2005	Dispose ZelMsgPage component
+Log: 5:13:48 PM 4/29/2005	 - finished disposing: three steps
+Log: 5:15:33 PM 4/29/2005Create MRVP Page
+Log: 5:15:33 PM 4/29/2005Create Mail Page
+Log: 5:15:33 PM 4/29/2005Create Batch Mail Page
+Log: 5:15:34 PM 4/29/2005Create ZEL Message Mail Page
+Log: 5:15:34 PM 4/29/2005Create PST Counter Page
+Log: 5:15:34 PM 4/29/2005Create NSF Counter Page
+Log: 5:15:34 PM 4/29/2005Create DB Mail Page
+Log: 5:15:35 PM 4/29/2005Create GUI Test Page
+Log: 5:15:35 PM 4/29/2005Create Audit Template Page
+Log: 5:15:35 PM 4/29/2005Create Audit Center Test Page
+Log: 5:15:35 PM 4/29/2005Create Outlook Page
+Log: 5:15:35 PM 4/29/2005Create Lotus Notes Page
+Log: 5:16:38 PM 4/29/2005Quit outlook
+Log: 5:17:11 PM 4/29/2005Outlook failed to add the personal store to this session
+System.Runtime.InteropServices.COMException   at Outlook.NameSpaceClass.AddStore(Object Store)
+   at QATool.PstCounter.getPstMailCount(String fileName)
+   at QATool.PstCounter.CreatePstCountTable()
+   at QATool.PstCounter.Thd_PstInFolder()
+Log: 5:17:44 PM 4/29/2005Quit outlook
+Log: 5:17:55 PM 4/29/2005Quit outlook
+Log: 5:18:06 PM 4/29/2005Outlook failed to add the personal store to this session
+System.Runtime.InteropServices.COMException   at Outlook.NameSpaceClass.AddStore(Object Store)
+   at QATool.PstCounter.getPstMailCount(String fileName)
+   at QATool.PstCounter.CreatePstCountTable()
+   at QATool.PstCounter.Thd_PstInFolder()
+Log: 5:18:09 PM 4/29/2005Quit outlook
+Log: 5:18:13 PM 4/29/2005MainForm.cs - ToolBox_Closed... Application Exit...
+Log: 5:18:13 PM 4/29/2005End of QATool - Execute Dispose
+Log: 5:18:13 PM 4/29/2005MailPage.cs - Deposing MailPage Object
+Log: 5:18:13 PM 4/29/2005	 Dispose component
+Log: 5:18:13 PM 4/29/2005BatMailPage.cs - Deposing BatMailPage Object
+Log: 5:18:13 PM 4/29/2005	Dispose BatMailPage component
+Log: 5:18:13 PM 4/29/2005QATool.cs - Depose Object
+Log: 5:18:13 PM 4/29/2005	Dispose ZelMsgPage component
+Log: 5:18:13 PM 4/29/2005	 - finished disposing: three steps
+Log: 5:18:24 PM 4/29/2005Create MRVP Page
+Log: 5:18:24 PM 4/29/2005Create Mail Page
+Log: 5:18:25 PM 4/29/2005Create Batch Mail Page
+Log: 5:18:25 PM 4/29/2005Create ZEL Message Mail Page
+Log: 5:18:25 PM 4/29/2005Create PST Counter Page
+Log: 5:18:26 PM 4/29/2005Create NSF Counter Page
+Log: 5:18:26 PM 4/29/2005Create DB Mail Page
+Log: 5:18:26 PM 4/29/2005Create GUI Test Page
+Log: 5:18:26 PM 4/29/2005Create Audit Template Page
+Log: 5:18:26 PM 4/29/2005Create Audit Center Test Page
+Log: 5:18:26 PM 4/29/2005Create Outlook Page
+Log: 5:18:26 PM 4/29/2005Create Lotus Notes Page
+Log: 5:18:46 PM 4/29/2005Outlook failed to add the personal store to this session
+System.Runtime.InteropServices.COMException   at Outlook.NameSpaceClass.AddStore(Object Store)
+   at QATool.PstCounter.getPstMailCount(String fileName)
+   at QATool.PstCounter.CreatePstCountTable()
+   at QATool.PstCounter.Thd_PstInFolder()
+Log: 5:18:48 PM 4/29/2005Quit outlook
+Log: 5:19:00 PM 4/29/2005Quit outlook
+Log: 5:19:38 PM 4/29/2005Quit outlook
+Log: 5:19:45 PM 4/29/2005MainForm.cs - ToolBox_Closed... Application Exit...
+Log: 5:19:45 PM 4/29/2005End of QATool - Execute Dispose
+Log: 5:19:45 PM 4/29/2005MailPage.cs - Deposing MailPage Object
+Log: 5:19:45 PM 4/29/2005	 Dispose component
+Log: 5:19:45 PM 4/29/2005BatMailPage.cs - Deposing BatMailPage Object
+Log: 5:19:45 PM 4/29/2005	Dispose BatMailPage component
+Log: 5:19:45 PM 4/29/2005QATool.cs - Depose Object
+Log: 5:19:45 PM 4/29/2005	Dispose ZelMsgPage component
+Log: 5:19:45 PM 4/29/2005	 - finished disposing: three steps
+Log: 5:22:42 PM 4/29/2005Create MRVP Page
+Log: 5:22:42 PM 4/29/2005Create Mail Page
+Log: 5:22:42 PM 4/29/2005Create Batch Mail Page
+Log: 5:22:43 PM 4/29/2005Create ZEL Message Mail Page
+Log: 5:22:43 PM 4/29/2005Create PST Counter Page
+Log: 5:22:43 PM 4/29/2005Create NSF Counter Page
+Log: 5:22:43 PM 4/29/2005Create DB Mail Page
+Log: 5:22:44 PM 4/29/2005Create GUI Test Page
+Log: 5:22:44 PM 4/29/2005Create Audit Template Page
+Log: 5:22:44 PM 4/29/2005Create Audit Center Test Page
+Log: 5:22:44 PM 4/29/2005Create Outlook Page
+Log: 5:22:44 PM 4/29/2005Create Lotus Notes Page
+Log: 5:24:00 PM 4/29/2005Quit outlook
+Log: 5:24:42 PM 4/29/2005Quit outlook
+Log: 5:25:20 PM 4/29/2005MainForm.cs - ToolBox_Closed... Application Exit...
+Log: 5:25:20 PM 4/29/2005End of QATool - Execute Dispose
+Log: 5:25:20 PM 4/29/2005MailPage.cs - Deposing MailPage Object
+Log: 5:25:20 PM 4/29/2005	 Dispose component
+Log: 5:25:20 PM 4/29/2005BatMailPage.cs - Deposing BatMailPage Object
+Log: 5:25:20 PM 4/29/2005	Dispose BatMailPage component
+Log: 5:25:20 PM 4/29/2005QATool.cs - Depose Object
+Log: 5:25:20 PM 4/29/2005	Dispose ZelMsgPage component
+Log: 5:25:20 PM 4/29/2005	 - finished disposing: three steps
+Log: 5:26:59 PM 4/29/2005Create MRVP Page
+Log: 5:26:59 PM 4/29/2005Create Mail Page
+Log: 5:27:00 PM 4/29/2005Create Batch Mail Page
+Log: 5:27:00 PM 4/29/2005Create ZEL Message Mail Page
+Log: 5:27:01 PM 4/29/2005Create PST Counter Page
+Log: 5:27:01 PM 4/29/2005Create NSF Counter Page
+Log: 5:27:01 PM 4/29/2005Create DB Mail Page
+Log: 5:27:01 PM 4/29/2005Create GUI Test Page
+Log: 5:27:01 PM 4/29/2005Create Audit Template Page
+Log: 5:27:01 PM 4/29/2005Create Audit Center Test Page
+Log: 5:27:01 PM 4/29/2005Create Outlook Page
+Log: 5:27:02 PM 4/29/2005Create Lotus Notes Page
+Log: 5:27:27 PM 4/29/2005Quit outlook
+Log: 5:27:57 PM 4/29/2005MainForm.cs - ToolBox_Closed... Application Exit...
+Log: 5:27:57 PM 4/29/2005End of QATool - Execute Dispose
+Log: 5:27:58 PM 4/29/2005MailPage.cs - Deposing MailPage Object
+Log: 5:27:58 PM 4/29/2005	 Dispose component
+Log: 5:27:58 PM 4/29/2005BatMailPage.cs - Deposing BatMailPage Object
+Log: 5:27:58 PM 4/29/2005	Dispose BatMailPage component
+Log: 5:27:58 PM 4/29/2005QATool.cs - Depose Object
+Log: 5:27:58 PM 4/29/2005	Dispose ZelMsgPage component
+Log: 5:27:58 PM 4/29/2005	 - finished disposing: three steps
+Log: 5:29:05 PM 4/29/2005Create MRVP Page
+Log: 5:29:05 PM 4/29/2005Create Mail Page
+Log: 5:29:05 PM 4/29/2005Create Batch Mail Page
+Log: 5:29:06 PM 4/29/2005Create ZEL Message Mail Page
+Log: 5:29:06 PM 4/29/2005Create PST Counter Page
+Log: 5:29:06 PM 4/29/2005Create NSF Counter Page
+Log: 5:29:06 PM 4/29/2005Create DB Mail Page
+Log: 5:29:06 PM 4/29/2005Create GUI Test Page
+Log: 5:29:07 PM 4/29/2005Create Audit Template Page
+Log: 5:29:07 PM 4/29/2005Create Audit Center Test Page
+Log: 5:29:07 PM 4/29/2005Create Outlook Page
+Log: 5:29:07 PM 4/29/2005Create Lotus Notes Page
+Log: 5:29:39 PM 4/29/2005Quit outlook
+Log: 5:29:47 PM 4/29/2005MainForm.cs - ToolBox_Closed... Application Exit...
+Log: 5:29:47 PM 4/29/2005End of QATool - Execute Dispose
+Log: 5:29:47 PM 4/29/2005MailPage.cs - Deposing MailPage Object
+Log: 5:29:47 PM 4/29/2005	 Dispose component
+Log: 5:29:47 PM 4/29/2005BatMailPage.cs - Deposing BatMailPage Object
+Log: 5:29:47 PM 4/29/2005	Dispose BatMailPage component
+Log: 5:29:47 PM 4/29/2005QATool.cs - Depose Object
+Log: 5:29:47 PM 4/29/2005	Dispose ZelMsgPage component
+Log: 5:29:47 PM 4/29/2005	 - finished disposing: three steps
+Log: 5:30:53 PM 4/29/2005Create MRVP Page
+Log: 5:30:54 PM 4/29/2005Create Mail Page
+Log: 5:30:54 PM 4/29/2005Create Batch Mail Page
+Log: 5:30:54 PM 4/29/2005Create ZEL Message Mail Page
+Log: 5:30:55 PM 4/29/2005Create PST Counter Page
+Log: 5:30:55 PM 4/29/2005Create NSF Counter Page
+Log: 5:30:55 PM 4/29/2005Create DB Mail Page
+Log: 5:30:55 PM 4/29/2005Create GUI Test Page
+Log: 5:30:55 PM 4/29/2005Create Audit Template Page
+Log: 5:30:56 PM 4/29/2005Create Audit Center Test Page
+Log: 5:30:56 PM 4/29/2005Create Outlook Page
+Log: 5:30:56 PM 4/29/2005Create Lotus Notes Page
+Log: 5:31:20 PM 4/29/2005Quit outlook
+Log: 5:31:30 PM 4/29/2005Quit outlook
+Log: 5:31:36 PM 4/29/2005MainForm.cs - ToolBox_Closed... Application Exit...
+Log: 5:31:36 PM 4/29/2005End of QATool - Execute Dispose
+Log: 5:31:36 PM 4/29/2005MailPage.cs - Deposing MailPage Object
+Log: 5:31:36 PM 4/29/2005	 Dispose component
+Log: 5:31:36 PM 4/29/2005BatMailPage.cs - Deposing BatMailPage Object
+Log: 5:31:36 PM 4/29/2005	Dispose BatMailPage component
+Log: 5:31:36 PM 4/29/2005QATool.cs - Depose Object
+Log: 5:31:36 PM 4/29/2005	Dispose ZelMsgPage component
+Log: 5:31:37 PM 4/29/2005	 - finished disposing: three steps
+Log: 5:32:12 PM 4/29/2005Create MRVP Page
+Log: 5:32:12 PM 4/29/2005Create Mail Page
+Log: 5:32:12 PM 4/29/2005Create Batch Mail Page
+Log: 5:32:13 PM 4/29/2005Create ZEL Message Mail Page
+Log: 5:32:13 PM 4/29/2005Create PST Counter Page
+Log: 5:32:13 PM 4/29/2005Create NSF Counter Page
+Log: 5:32:13 PM 4/29/2005Create DB Mail Page
+Log: 5:32:13 PM 4/29/2005Create GUI Test Page
+Log: 5:32:14 PM 4/29/2005Create Audit Template Page
+Log: 5:32:14 PM 4/29/2005Create Audit Center Test Page
+Log: 5:32:14 PM 4/29/2005Create Outlook Page
+Log: 5:32:14 PM 4/29/2005Create Lotus Notes Page
+Log: 5:32:57 PM 4/29/2005Quit outlook
+Log: 5:33:04 PM 4/29/2005MainForm.cs - ToolBox_Closed... Application Exit...
+Log: 5:33:04 PM 4/29/2005End of QATool - Execute Dispose
+Log: 5:33:04 PM 4/29/2005MailPage.cs - Deposing MailPage Object
+Log: 5:33:05 PM 4/29/2005	 Dispose component
+Log: 5:33:05 PM 4/29/2005BatMailPage.cs - Deposing BatMailPage Object
+Log: 5:33:05 PM 4/29/2005	Dispose BatMailPage component
+Log: 5:33:05 PM 4/29/2005QATool.cs - Depose Object
+Log: 5:33:05 PM 4/29/2005	Dispose ZelMsgPage component
+Log: 5:33:05 PM 4/29/2005	 - finished disposing: three steps
+Log: 5:38:52 PM 4/29/2005Create MRVP Page
+Log: 5:38:52 PM 4/29/2005Create Mail Page
+Log: 5:38:53 PM 4/29/2005Create Batch Mail Page
+Log: 5:38:53 PM 4/29/2005Create ZEL Message Mail Page
+Log: 5:38:54 PM 4/29/2005Create PST Counter Page
+Log: 5:38:54 PM 4/29/2005Create NSF Counter Page
+Log: 5:38:54 PM 4/29/2005Create DB Mail Page
+Log: 5:38:54 PM 4/29/2005Create GUI Test Page
+Log: 5:38:54 PM 4/29/2005Create Audit Template Page
+Log: 5:38:54 PM 4/29/2005Create Audit Center Test Page
+Log: 5:38:54 PM 4/29/2005Create Outlook Page
+Log: 5:38:55 PM 4/29/2005Create Lotus Notes Page
+Log: 5:39:35 PM 4/29/2005Quit outlook
+Log: 5:40:10 PM 4/29/2005Quit outlook
+Log: 5:40:22 PM 4/29/2005Quit outlook
+Log: 5:40:24 PM 4/29/2005MainForm.cs - ToolBox_Closed... Application Exit...
+Log: 5:40:24 PM 4/29/2005End of QATool - Execute Dispose
+Log: 5:40:24 PM 4/29/2005MailPage.cs - Deposing MailPage Object
+Log: 5:40:24 PM 4/29/2005	 Dispose component
+Log: 5:40:24 PM 4/29/2005BatMailPage.cs - Deposing BatMailPage Object
+Log: 5:40:24 PM 4/29/2005	Dispose BatMailPage component
+Log: 5:40:24 PM 4/29/2005QATool.cs - Depose Object
+Log: 5:40:24 PM 4/29/2005	Dispose ZelMsgPage component
+Log: 5:40:24 PM 4/29/2005	 - finished disposing: three steps
+Log: 5:43:11 PM 4/29/2005Create MRVP Page
+Log: 5:43:11 PM 4/29/2005Create Mail Page
+Log: 5:43:12 PM 4/29/2005Create Batch Mail Page
+Log: 5:43:12 PM 4/29/2005Create ZEL Message Mail Page
+Log: 5:43:13 PM 4/29/2005Create PST Counter Page
+Log: 5:43:13 PM 4/29/2005Create NSF Counter Page
+Log: 5:43:13 PM 4/29/2005Create DB Mail Page
+Log: 5:43:13 PM 4/29/2005Create GUI Test Page
+Log: 5:43:13 PM 4/29/2005Create Audit Template Page
+Log: 5:43:13 PM 4/29/2005Create Audit Center Test Page
+Log: 5:43:13 PM 4/29/2005Create Outlook Page
+Log: 5:43:14 PM 4/29/2005Create Lotus Notes Page
+Log: 5:43:59 PM 4/29/2005Quit outlook
+Log: 5:44:10 PM 4/29/2005MainForm.cs - ToolBox_Closed... Application Exit...
+Log: 5:44:10 PM 4/29/2005End of QATool - Execute Dispose
+Log: 5:44:11 PM 4/29/2005MailPage.cs - Deposing MailPage Object
+Log: 5:44:11 PM 4/29/2005	 Dispose component
+Log: 5:44:11 PM 4/29/2005BatMailPage.cs - Deposing BatMailPage Object
+Log: 5:44:11 PM 4/29/2005	Dispose BatMailPage component
+Log: 5:44:11 PM 4/29/2005QATool.cs - Depose Object
+Log: 5:44:11 PM 4/29/2005	Dispose ZelMsgPage component
+Log: 5:44:11 PM 4/29/2005	 - finished disposing: three steps
+Log: 5:45:29 PM 4/29/2005Create MRVP Page
+Log: 5:45:29 PM 4/29/2005Create Mail Page
+Log: 5:45:29 PM 4/29/2005Create Batch Mail Page
+Log: 5:45:30 PM 4/29/2005Create ZEL Message Mail Page
+Log: 5:45:30 PM 4/29/2005Create PST Counter Page
+Log: 5:45:30 PM 4/29/2005Create NSF Counter Page
+Log: 5:45:30 PM 4/29/2005Create DB Mail Page
+Log: 5:45:30 PM 4/29/2005Create GUI Test Page
+Log: 5:45:30 PM 4/29/2005Create Audit Template Page
+Log: 5:45:31 PM 4/29/2005Create Audit Center Test Page
+Log: 5:45:31 PM 4/29/2005Create Outlook Page
+Log: 5:45:31 PM 4/29/2005Create Lotus Notes Page
+Log: 5:46:02 PM 4/29/2005Quit outlook
+Log: 5:46:13 PM 4/29/2005MainForm.cs - ToolBox_Closed... Application Exit...
+Log: 5:46:13 PM 4/29/2005End of QATool - Execute Dispose
+Log: 5:46:14 PM 4/29/2005MailPage.cs - Deposing MailPage Object
+Log: 5:46:14 PM 4/29/2005	 Dispose component
+Log: 5:46:14 PM 4/29/2005BatMailPage.cs - Deposing BatMailPage Object
+Log: 5:46:14 PM 4/29/2005	Dispose BatMailPage component
+Log: 5:46:14 PM 4/29/2005QATool.cs - Depose Object
+Log: 5:46:14 PM 4/29/2005	Dispose ZelMsgPage component
+Log: 5:46:14 PM 4/29/2005	 - finished disposing: three steps
+Log: 5:48:50 PM 4/29/2005Create MRVP Page
+Log: 5:48:50 PM 4/29/2005Create Mail Page
+Log: 5:48:51 PM 4/29/2005Create Batch Mail Page
+Log: 5:48:51 PM 4/29/2005Create ZEL Message Mail Page
+Log: 5:48:52 PM 4/29/2005Create PST Counter Page
+Log: 5:48:52 PM 4/29/2005Create NSF Counter Page
+Log: 5:48:52 PM 4/29/2005Create DB Mail Page
+Log: 5:48:52 PM 4/29/2005Create GUI Test Page
+Log: 5:48:52 PM 4/29/2005Create Audit Template Page
+Log: 5:48:52 PM 4/29/2005Create Audit Center Test Page
+Log: 5:48:53 PM 4/29/2005Create Outlook Page
+Log: 5:48:53 PM 4/29/2005Create Lotus Notes Page
+Log: 5:49:38 PM 4/29/2005Quit outlook
+Log: 5:49:45 PM 4/29/2005MainForm.cs - ToolBox_Closed... Application Exit...
+Log: 5:49:45 PM 4/29/2005End of QATool - Execute Dispose
+Log: 5:49:45 PM 4/29/2005MailPage.cs - Deposing MailPage Object
+Log: 5:49:45 PM 4/29/2005	 Dispose component
+Log: 5:49:46 PM 4/29/2005BatMailPage.cs - Deposing BatMailPage Object
+Log: 5:49:46 PM 4/29/2005	Dispose BatMailPage component
+Log: 5:49:46 PM 4/29/2005QATool.cs - Depose Object
+Log: 5:49:46 PM 4/29/2005	Dispose ZelMsgPage component
+Log: 5:49:46 PM 4/29/2005	 - finished disposing: three steps
+Log: 5:52:10 PM 4/29/2005Create MRVP Page
+Log: 5:52:10 PM 4/29/2005Create Mail Page
+Log: 5:52:10 PM 4/29/2005Create Batch Mail Page
+Log: 5:52:11 PM 4/29/2005Create ZEL Message Mail Page
+Log: 5:52:11 PM 4/29/2005Create PST Counter Page
+Log: 5:52:11 PM 4/29/2005Create NSF Counter Page
+Log: 5:52:11 PM 4/29/2005Create DB Mail Page
+Log: 5:52:11 PM 4/29/2005Create GUI Test Page
+Log: 5:52:12 PM 4/29/2005Create Audit Template Page
+Log: 5:52:12 PM 4/29/2005Create Audit Center Test Page
+Log: 5:52:12 PM 4/29/2005Create Outlook Page
+Log: 5:52:12 PM 4/29/2005Create Lotus Notes Page
+Log: 5:52:43 PM 4/29/2005Quit outlook
+Log: 5:52:54 PM 4/29/2005Quit outlook
+Log: 5:52:58 PM 4/29/2005MainForm.cs - ToolBox_Closed... Application Exit...
+Log: 5:52:58 PM 4/29/2005End of QATool - Execute Dispose
+Log: 5:52:58 PM 4/29/2005MailPage.cs - Deposing MailPage Object
+Log: 5:52:58 PM 4/29/2005	 Dispose component
+Log: 5:52:58 PM 4/29/2005BatMailPage.cs - Deposing BatMailPage Object
+Log: 5:52:58 PM 4/29/2005	Dispose BatMailPage component
+Log: 5:52:58 PM 4/29/2005QATool.cs - Depose Object
+Log: 5:52:58 PM 4/29/2005	Dispose ZelMsgPage component
+Log: 5:52:58 PM 4/29/2005	 - finished disposing: three steps
+Log: 5:54:25 PM 4/29/2005Create MRVP Page
+Log: 5:54:25 PM 4/29/2005Create Mail Page
+Log: 5:54:26 PM 4/29/2005Create Batch Mail Page
+Log: 5:54:26 PM 4/29/2005Create ZEL Message Mail Page
+Log: 5:54:27 PM 4/29/2005Create PST Counter Page
+Log: 5:54:27 PM 4/29/2005Create NSF Counter Page
+Log: 5:54:27 PM 4/29/2005Create DB Mail Page
+Log: 5:54:27 PM 4/29/2005Create GUI Test Page
+Log: 5:54:27 PM 4/29/2005Create Audit Template Page
+Log: 5:54:27 PM 4/29/2005Create Audit Center Test Page
+Log: 5:54:28 PM 4/29/2005Create Outlook Page
+Log: 5:54:28 PM 4/29/2005Create Lotus Notes Page
+Log: 5:54:45 PM 4/29/2005Controls created on one thread cannot be parented to a control on a different thread.
+System.ArgumentException   at System.Windows.Forms.ControlCollection.Add(Control value)
+   at System.Windows.Forms.DataGridTextBoxColumn.SetDataGridInColumn(DataGrid value)
+   at System.Windows.Forms.DataGridColumnStyle.SetDataGridTableInColumn(DataGridTableStyle value, Boolean force)
+   at System.Windows.Forms.GridColumnStylesCollection.AddDefaultColumn(DataGridColumnStyle column)
+   at System.Windows.Forms.DataGridTableStyle.SetGridColumnStylesCollection(CurrencyManager listManager)
+   at System.Windows.Forms.DataGrid.PairTableStylesAndGridColumns(CurrencyManager lm, DataGridTableStyle gridTable, Boolean forceColumnCreation)
+   at System.Windows.Forms.DataGrid.SetDataGridTable(DataGridTableStyle newTable, Boolean forceColumnCreation)
+   at System.Windows.Forms.DataGrid.Set_ListManager(Object newDataSource, String newDataMember, Boolean force, Boolean forceColumnCreation)
+   at System.Windows.Forms.DataGrid.Set_ListManager(Object newDataSource, String newDataMember, Boolean force)
+   at System.Windows.Forms.DataGrid.set_DataSource(Object value)
+   at QATool.PstCounter.CreatePstCountTable()
+   at QATool.PstCounter.Thd_PstInFolder()
+Log: 5:54:48 PM 4/29/2005Quit outlook
+Log: 5:54:50 PM 4/29/2005Quit outlook
+Log: 5:54:53 PM 4/29/2005MainForm.cs - ToolBox_Closed... Application Exit...
+Log: 5:54:53 PM 4/29/2005End of QATool - Execute Dispose
+Log: 5:54:53 PM 4/29/2005MailPage.cs - Deposing MailPage Object
+Log: 5:54:53 PM 4/29/2005	 Dispose component
+Log: 5:54:53 PM 4/29/2005BatMailPage.cs - Deposing BatMailPage Object
+Log: 5:54:53 PM 4/29/2005	Dispose BatMailPage component
+Log: 5:54:53 PM 4/29/2005QATool.cs - Depose Object
+Log: 5:54:53 PM 4/29/2005	Dispose ZelMsgPage component
+Log: 5:54:53 PM 4/29/2005	 - finished disposing: three steps
+Log: 5:57:33 PM 4/29/2005Create MRVP Page
+Log: 5:57:33 PM 4/29/2005Create Mail Page
+Log: 5:57:34 PM 4/29/2005Create Batch Mail Page
+Log: 5:57:34 PM 4/29/2005Create ZEL Message Mail Page
+Log: 5:57:35 PM 4/29/2005Create PST Counter Page
+Log: 5:57:35 PM 4/29/2005Create NSF Counter Page
+Log: 5:57:35 PM 4/29/2005Create DB Mail Page
+Log: 5:57:35 PM 4/29/2005Create GUI Test Page
+Log: 5:57:35 PM 4/29/2005Create Audit Template Page
+Log: 5:57:35 PM 4/29/2005Create Audit Center Test Page
+Log: 5:57:35 PM 4/29/2005Create Outlook Page
+Log: 5:57:36 PM 4/29/2005Create Lotus Notes Page
+Log: 5:58:21 PM 4/29/2005Quit outlook
+Log: 5:58:42 PM 4/29/2005MainForm.cs - ToolBox_Closed... Application Exit...
+Log: 5:58:42 PM 4/29/2005End of QATool - Execute Dispose
+Log: 5:58:42 PM 4/29/2005MailPage.cs - Deposing MailPage Object
+Log: 5:58:42 PM 4/29/2005	 Dispose component
+Log: 5:58:43 PM 4/29/2005BatMailPage.cs - Deposing BatMailPage Object
+Log: 5:58:43 PM 4/29/2005	Dispose BatMailPage component
+Log: 5:58:43 PM 4/29/2005QATool.cs - Depose Object
+Log: 5:58:43 PM 4/29/2005	Dispose ZelMsgPage component
+Log: 5:58:43 PM 4/29/2005	 - finished disposing: three steps
+Log: 5:59:58 PM 4/29/2005Create MRVP Page
+Log: 5:59:59 PM 4/29/2005Create Mail Page
+Log: 5:59:59 PM 4/29/2005Create Batch Mail Page
+Log: 6:00:00 PM 4/29/2005Create ZEL Message Mail Page
+Log: 6:00:00 PM 4/29/2005Create PST Counter Page
+Log: 6:00:00 PM 4/29/2005Create NSF Counter Page
+Log: 6:00:00 PM 4/29/2005Create DB Mail Page
+Log: 6:00:01 PM 4/29/2005Create GUI Test Page
+Log: 6:00:01 PM 4/29/2005Create Audit Template Page
+Log: 6:00:01 PM 4/29/2005Create Audit Center Test Page
+Log: 6:00:01 PM 4/29/2005Create Outlook Page
+Log: 6:00:01 PM 4/29/2005Create Lotus Notes Page
+Log: 6:00:36 PM 4/29/2005Quit outlook
+Log: 6:00:54 PM 4/29/2005MainForm.cs - ToolBox_Closed... Application Exit...
+Log: 6:00:54 PM 4/29/2005End of QATool - Execute Dispose
+Log: 6:00:54 PM 4/29/2005MailPage.cs - Deposing MailPage Object
+Log: 6:00:54 PM 4/29/2005	 Dispose component
+Log: 6:00:54 PM 4/29/2005BatMailPage.cs - Deposing BatMailPage Object
+Log: 6:00:54 PM 4/29/2005	Dispose BatMailPage component
+Log: 6:00:54 PM 4/29/2005QATool.cs - Depose Object
+Log: 6:00:54 PM 4/29/2005	Dispose ZelMsgPage component
+Log: 6:00:54 PM 4/29/2005	 - finished disposing: three steps
+Log: 6:02:03 PM 4/29/2005Create MRVP Page
+Log: 6:02:03 PM 4/29/2005Create Mail Page
+Log: 6:02:04 PM 4/29/2005Create Batch Mail Page
+Log: 6:02:04 PM 4/29/2005Create ZEL Message Mail Page
+Log: 6:02:05 PM 4/29/2005Create PST Counter Page
+Log: 6:02:05 PM 4/29/2005Create NSF Counter Page
+Log: 6:02:05 PM 4/29/2005Create DB Mail Page
+Log: 6:02:05 PM 4/29/2005Create GUI Test Page
+Log: 6:02:05 PM 4/29/2005Create Audit Template Page
+Log: 6:02:05 PM 4/29/2005Create Audit Center Test Page
+Log: 6:02:06 PM 4/29/2005Create Outlook Page
+Log: 6:02:06 PM 4/29/2005Create Lotus Notes Page
+Log: 6:02:35 PM 4/29/2005Controls created on one thread cannot be parented to a control on a different thread.
+System.ArgumentException   at System.Windows.Forms.ControlCollection.Add(Control value)
+   at System.Windows.Forms.DataGridTextBoxColumn.SetDataGridInColumn(DataGrid value)
+   at System.Windows.Forms.DataGridColumnStyle.SetDataGridTableInColumn(DataGridTableStyle value, Boolean force)
+   at System.Windows.Forms.GridColumnStylesCollection.AddDefaultColumn(DataGridColumnStyle column)
+   at System.Windows.Forms.DataGridTableStyle.SetGridColumnStylesCollection(CurrencyManager listManager)
+   at System.Windows.Forms.DataGrid.PairTableStylesAndGridColumns(CurrencyManager lm, DataGridTableStyle gridTable, Boolean forceColumnCreation)
+   at System.Windows.Forms.DataGrid.SetDataGridTable(DataGridTableStyle newTable, Boolean forceColumnCreation)
+   at System.Windows.Forms.DataGrid.Set_ListManager(Object newDataSource, String newDataMember, Boolean force, Boolean forceColumnCreation)
+   at System.Windows.Forms.DataGrid.Set_ListManager(Object newDataSource, String newDataMember, Boolean force)
+   at System.Windows.Forms.DataGrid.set_DataSource(Object value)
+   at QATool.PstCounter.Thd_PstInFolder()
+Log: 6:02:46 PM 4/29/2005Quit outlook
+Log: 6:02:54 PM 4/29/2005Quit outlook
+Log: 6:02:58 PM 4/29/2005MainForm.cs - ToolBox_Closed... Application Exit...
+Log: 6:02:58 PM 4/29/2005End of QATool - Execute Dispose
+Log: 6:02:58 PM 4/29/2005MailPage.cs - Deposing MailPage Object
+Log: 6:02:58 PM 4/29/2005	 Dispose component
+Log: 6:02:58 PM 4/29/2005BatMailPage.cs - Deposing BatMailPage Object
+Log: 6:02:58 PM 4/29/2005	Dispose BatMailPage component
+Log: 6:02:58 PM 4/29/2005QATool.cs - Depose Object
+Log: 6:02:58 PM 4/29/2005	Dispose ZelMsgPage component
+Log: 6:02:58 PM 4/29/2005	 - finished disposing: three steps
+Log: 6:06:42 PM 4/29/2005Create MRVP Page
+Log: 6:06:42 PM 4/29/2005Create Mail Page
+Log: 6:06:43 PM 4/29/2005Create Batch Mail Page
+Log: 6:06:43 PM 4/29/2005Create ZEL Message Mail Page
+Log: 6:06:44 PM 4/29/2005Create PST Counter Page
+Log: 6:06:44 PM 4/29/2005Create NSF Counter Page
+Log: 6:06:44 PM 4/29/2005Create DB Mail Page
+Log: 6:06:44 PM 4/29/2005Create GUI Test Page
+Log: 6:06:44 PM 4/29/2005Create Audit Template Page
+Log: 6:06:44 PM 4/29/2005Create Audit Center Test Page
+Log: 6:06:44 PM 4/29/2005Create Outlook Page
+Log: 6:06:45 PM 4/29/2005Create Lotus Notes Page
+Log: 6:07:27 PM 4/29/2005Quit outlook
+Log: 6:07:33 PM 4/29/2005MainForm.cs - ToolBox_Closed... Application Exit...
+Log: 6:07:33 PM 4/29/2005End of QATool - Execute Dispose
+Log: 6:07:33 PM 4/29/2005MailPage.cs - Deposing MailPage Object
+Log: 6:07:33 PM 4/29/2005	 Dispose component
+Log: 6:07:33 PM 4/29/2005BatMailPage.cs - Deposing BatMailPage Object
+Log: 6:07:33 PM 4/29/2005	Dispose BatMailPage component
+Log: 6:07:33 PM 4/29/2005QATool.cs - Depose Object
+Log: 6:07:33 PM 4/29/2005	Dispose ZelMsgPage component
+Log: 6:07:33 PM 4/29/2005	 - finished disposing: three steps
+Log: 6:08:41 PM 4/29/2005Create MRVP Page
+Log: 6:08:41 PM 4/29/2005Create Mail Page
+Log: 6:08:41 PM 4/29/2005Create Batch Mail Page
+Log: 6:08:42 PM 4/29/2005Create ZEL Message Mail Page
+Log: 6:08:42 PM 4/29/2005Create PST Counter Page
+Log: 6:08:42 PM 4/29/2005Create NSF Counter Page
+Log: 6:08:42 PM 4/29/2005Create DB Mail Page
+Log: 6:08:43 PM 4/29/2005Create GUI Test Page
+Log: 6:08:43 PM 4/29/2005Create Audit Template Page
+Log: 6:08:43 PM 4/29/2005Create Audit Center Test Page
+Log: 6:08:43 PM 4/29/2005Create Outlook Page
+Log: 6:08:43 PM 4/29/2005Create Lotus Notes Page
+Log: 6:10:21 PM 4/29/2005Outlook failed to add the personal store to this session
+System.Runtime.InteropServices.COMException   at Outlook.NameSpaceClass.AddStore(Object Store)
+   at QATool.PstCounter.getPstMailCount(String fileName)
+   at QATool.PstCounter.CreatePstCountTable()
+   at QATool.PstCounter.Thd_PstInFolder()
+Log: 6:12:40 PM 4/29/2005Quit outlook
+Log: 6:14:22 PM 4/29/2005The remote procedure call failed.
+System.Runtime.InteropServices.COMException   at Outlook.FoldersClass.GetLast()
+   at QATool.PstCounter.RemovePstStore()
+   at QATool.PstCounter.btnDone_Click(Object sender, EventArgs e)
+Log: 6:14:27 PM 4/29/2005The RPC server is unavailable.
+System.Runtime.InteropServices.COMException   at Outlook.NameSpaceClass.Logoff()
+   at QATool.PstCounter.btnDone_Click(Object sender, EventArgs e)
+Log: 6:14:29 PM 4/29/2005MainForm.cs - ToolBox_Closed... Application Exit...
+Log: 6:14:29 PM 4/29/2005End of QATool - Execute Dispose
+Log: 6:14:29 PM 4/29/2005MailPage.cs - Deposing MailPage Object
+Log: 6:14:29 PM 4/29/2005	 Dispose component
+Log: 6:14:29 PM 4/29/2005BatMailPage.cs - Deposing BatMailPage Object
+Log: 6:14:29 PM 4/29/2005	Dispose BatMailPage component
+Log: 6:14:30 PM 4/29/2005QATool.cs - Depose Object
+Log: 6:14:30 PM 4/29/2005	Dispose ZelMsgPage component
+Log: 6:14:30 PM 4/29/2005	 - finished disposing: three steps
+Log: 6:18:27 PM 4/29/2005Create MRVP Page
+Log: 6:18:27 PM 4/29/2005Create Mail Page
+Log: 6:18:28 PM 4/29/2005Create Batch Mail Page
+Log: 6:18:28 PM 4/29/2005Create ZEL Message Mail Page
+Log: 6:18:28 PM 4/29/2005Create PST Counter Page
+Log: 6:18:29 PM 4/29/2005Create NSF Counter Page
+Log: 6:18:29 PM 4/29/2005Create DB Mail Page
+Log: 6:18:29 PM 4/29/2005Create GUI Test Page
+Log: 6:18:29 PM 4/29/2005Create Audit Template Page
+Log: 6:18:29 PM 4/29/2005Create Audit Center Test Page
+Log: 6:18:29 PM 4/29/2005Create Outlook Page
+Log: 6:18:29 PM 4/29/2005Create Lotus Notes Page
+Log: 6:20:41 PM 4/29/2005Quit outlook
+Log: 6:21:13 PM 4/29/2005Quit outlook
+Log: 6:21:18 PM 4/29/2005MainForm.cs - ToolBox_Closed... Application Exit...
+Log: 6:21:18 PM 4/29/2005End of QATool - Execute Dispose
+Log: 6:21:18 PM 4/29/2005MailPage.cs - Deposing MailPage Object
+Log: 6:21:18 PM 4/29/2005	 Dispose component
+Log: 6:21:18 PM 4/29/2005BatMailPage.cs - Deposing BatMailPage Object
+Log: 6:21:18 PM 4/29/2005	Dispose BatMailPage component
+Log: 6:21:18 PM 4/29/2005QATool.cs - Depose Object
+Log: 6:21:18 PM 4/29/2005	Dispose ZelMsgPage component
+Log: 6:21:18 PM 4/29/2005	 - finished disposing: three steps

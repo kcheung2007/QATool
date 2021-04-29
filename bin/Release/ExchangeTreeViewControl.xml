@@ -1,0 +1,996 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ExchangeTreeViewControl</name>
+    </assembly>
+    <members>
+        <member name="T:ExchangeSDK.Tools.ExchangeTreeView.ConnectDataClass">
+            <summary>
+            ConnectDataClass
+            
+            This is a small in memory data table that is used to maintain
+            the information for each root added. The base URI, node index
+            and user credentials are stored here. This is also used to get
+            root information when a WebDAV call is made.
+            
+            To modify this just change the enums and add or remove the
+            column values.
+            </summary>
+            
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ConnectDataClass.CreateColumn(System.String,System.Boolean)">
+            <summary>
+            CreateColumn
+            
+            </summary>
+            <param name="columnName">Name of the column.</param>
+            <param name="isString">The data type. Default is int32.</param>
+            <returns>DataColumn</returns>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ConnectDataClass.DeleteAllConnections">
+            <summary>
+            DeleteAllConnections
+            
+            Delete all rows in the database.
+            </summary>
+            <returns>void</returns>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ConnectDataClass.DeleteConnection(System.String)">
+            <summary>
+            Delete Connection.
+            
+            Delete a row from the database.
+            </summary>
+            <param name="uri">The root URI.</param>
+            <returns>void</returns>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ConnectDataClass.AddConnection(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            AddConnnection
+            
+            This function adds a connection to the connect database.
+            
+            The calling function should validate these arguments before sending. 
+            </summary>
+            <param name="uri">Base URI. It must be unique.</param>
+            <param name="root">Root name tree. Duplicates are ok.</param>
+            <param name="username">Username</param>
+            <param name="password">Password</param>
+            <param name="domain">Domain</param>
+            <param name="nodeIndex">Index in the treeview</param>
+            <returns></returns>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ConnectDataClass.GetConnection(System.String)">
+            <summary>
+            GetConnection.
+            
+            Uses the URI to find the associated data row.
+            </summary>
+            <param name="rootUri">Root URI.</param>
+            <returns>datarow or NULL of no row found.</returns>
+        </member>
+        <member name="T:ExchangeSDK.Tools.ExchangeTreeView.ConnectDataClass.ColumnNames">
+            <summary>
+            This is an enumeration of the columns names
+            used in the internal data table.
+            </summary>
+        </member>
+        <member name="T:ExchangeSDK.Tools.ExchangeTreeView.ConnectDataClass.ConnectDataError">
+            <summary>
+            This is an enumeration of the user errors that can be
+            returned by the class.
+            </summary>
+        </member>
+        <member name="T:ExchangeSDK.Tools.ExchangeTreeView.LocalizableErrors">
+            <summary>
+            This is the enumeration is the error codes which may be 
+            returned by the OnControlError.
+            </summary>
+            <remarks>
+            The text for these errors will be displayed by the control by default
+            unless disabled by a public property. The localizable error enum are 
+            is returned as an error code property on the event arguments for the
+            for the OnControlError event. 
+            </remarks>
+        </member>
+        <member name="F:ExchangeSDK.Tools.ExchangeTreeView.LocalizableErrors.FolderAlreadyExists">
+            <summary>
+            A folder already exists and a user tried to overwrite or create it.
+            </summary>
+        </member>
+        <member name="F:ExchangeSDK.Tools.ExchangeTreeView.LocalizableErrors.RowAlreadyExists">
+            <summary>
+            The root URI already already exists in the treeview.
+            </summary>
+        </member>
+        <member name="F:ExchangeSDK.Tools.ExchangeTreeView.LocalizableErrors.NoNodesToRemove">
+            <summary>
+            User tried to remove a root that doesn't exist.
+            </summary>
+        </member>
+        <member name="F:ExchangeSDK.Tools.ExchangeTreeView.LocalizableErrors.RootDoesNotExist">
+            <summary>
+            User tried to delete a root when there aren't any.
+            </summary>
+        </member>
+        <member name="F:ExchangeSDK.Tools.ExchangeTreeView.LocalizableErrors.ExchangeNotAvailable">
+            <summary>
+            Exchange is not available.
+            </summary>
+        </member>
+        <member name="F:ExchangeSDK.Tools.ExchangeTreeView.LocalizableErrors.FolderNotFound">
+            <summary>
+            Folder not found may occur in many scenerios. Typically that
+            folder was modified by someone else and it not longer
+            exists.
+            </summary>
+        </member>
+        <member name="F:ExchangeSDK.Tools.ExchangeTreeView.LocalizableErrors.RowLimit">
+            <summary>
+            The maximum number of treeview roots has been exceeded. 
+            </summary>
+        </member>
+        <member name="F:ExchangeSDK.Tools.ExchangeTreeView.LocalizableErrors.RootAlreadyExists">
+            <summary>
+            The user tried to add a root that already exists.
+            </summary>
+        </member>
+        <member name="F:ExchangeSDK.Tools.ExchangeTreeView.LocalizableErrors.DragNotAllowedAcrossServers">
+            <summary>
+            Drag is not allowed between different server roots.
+            </summary>
+        </member>
+        <member name="F:ExchangeSDK.Tools.ExchangeTreeView.LocalizableErrors.SpecialCharactersInCredentials">
+            <summary>
+            The credentials contain special characters.
+            </summary>
+        </member>
+        <member name="F:ExchangeSDK.Tools.ExchangeTreeView.LocalizableErrors.UnableToDeleteFolder">
+            <summary>
+            A failure occured while trying to delete a folder.
+            </summary>
+        </member>
+        <member name="F:ExchangeSDK.Tools.ExchangeTreeView.LocalizableErrors.UnableToMoveFolder">
+            <summary>
+            A failure occured while trying to move a folder.
+            </summary>
+        </member>
+        <member name="F:ExchangeSDK.Tools.ExchangeTreeView.LocalizableErrors.UnableToCopyFolder">
+            <summary>
+            A failure occured while trying to copy a folder.
+            </summary>
+        </member>
+        <member name="F:ExchangeSDK.Tools.ExchangeTreeView.LocalizableErrors.UnableToRenameFolder">
+            <summary>
+            A failure occured while trying to rename a folder.
+            </summary>
+        </member>
+        <member name="F:ExchangeSDK.Tools.ExchangeTreeView.LocalizableErrors.ConnectionProblem">
+            <summary>
+            Unable to connect to the server.
+            </summary>
+        </member>
+        <member name="T:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl">
+            <summary>
+            This is the main control interface for the Exchange Tree View User Control.
+            </summary>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.SetInputFormText(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            This method is used to change the text that is used in the
+            input form. The input form is used to enter a new folder
+            name or edit a existing folder name.
+            </summary>
+            <param name="inputBoxPrompt"></param>
+            <param name="inputBoxAcceptButton"></param>
+            <param name="inputBoxCancelButton"></param>
+            <param name="inputBoxTitleRename"></param>
+            <param name="inputBoxTitleNew"></param>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.SetContextDefaultMenuText(System.String,System.String,System.String)">
+            <summary>
+            This method is used to change the text that is used in the
+            folder context menu.
+            </summary>
+            <param name="contextNew">New item display menu string.</param>
+            <param name="contextRename">Rename item display menu string.</param>
+            <param name="contextDelete">Delete item display menu string.</param>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.SetContextDragMenuText(System.String,System.String,System.String)">
+            <summary>
+            This method is used to change the text that is used in the
+            drag drop context menu.
+            </summary>
+            <param name="contextMove">Move item display menu string.</param>
+            <param name="contextCopy">Copy item display menu string.</param>
+            <param name="contextCancel">Cancel item display menu string.</param>
+        </member>
+        <member name="F:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.ContextMenuEnabled">
+            <summary>
+            Default is true. Enables or disables the
+            context menu displayed by a right click and
+            it's not a drag operation.
+            </summary>
+        </member>
+        <member name="F:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.DragDropEnabled">
+            <summary>
+            Default is true. Enables or disables drag drop. 
+            </summary>
+        </member>
+        <member name="F:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.ErrorsReturnedNotDisplayed">
+            <summary>
+            Default is false. If set to true the error
+            will not be displayed the treeview control but
+            will be passed back to the consumer in an event.
+            </summary>
+        </member>
+        <member name="F:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.ApplicationName">
+            <summary>
+            Use this string to set the application name displayed
+            by the treeview control User Interface elements. If
+            not used the control will use the internal value.
+            </summary>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.#ctor">
+            <summary>
+            The constructor of the control. 
+            </summary>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.LocalizeForm">
+            <summary>
+            This method localizes all displayed User Interface elements and error messages.
+            </summary>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.RemoveAllRoots">
+            <summary>
+            Removes all the roots from the internal data table and the 
+            visible treeview.
+            </summary>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.RemoveRoot(System.String)">
+            <summary>
+            Removes an individual root from the treeview and the
+            internal data table.
+            </summary>
+            <param name="uri">URI to the exchange store folder or TLH. 
+            It must match a root in the treeview.</param>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.AddRoot(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            This method adds a root to the treeview and adds an entry
+            to the internal data table.
+            </summary>
+            <param name="uri">URI to an Exchange server folder or TLH.</param>
+            <param name="rootNodeName">Display name.</param>
+            <param name="username">Username string.</param>
+            <param name="password">Password string.</param>
+            <param name="domain">Domain string.</param>
+            <returns>False if there is a failure. True otherwise.</returns>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.InitializeTree">
+            <summary>
+            InitializeTree 
+            
+            This method is used when the control needs
+            to be populated with data. 
+            </summary>
+            <returns>void</returns>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.PopulateTreeView(System.Windows.Forms.TreeNodeCollection,System.String,System.String)">
+            <summary>
+             PopulateTreeView
+            
+            Takes a tree node collection and searches for all the
+            folders under the selected node.
+            </summary>
+            <param name="tNodes">Nodes collection.</param>
+            <param name="rootUri">The root URI. This is important because it should match the data table.</param>
+            <param name="currentUri">The folder URI.</param>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.Dispose(System.Boolean)">
+            <summary>
+            Dispose method override.
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.treeViewMain_DragOver(System.Object,System.Windows.Forms.DragEventArgs)">
+            <summary>
+            treeViewmain_DragOver
+            
+            This event occurs when a node is dragged over and is controlled by
+            the treeview control. Use the event to update the selected node.
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">DragEventArgs</param>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.treeViewMain_MouseUp(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            This is the mouse up event for the tree view control. This event is
+            implemented to keep track of the mouse movement only during the
+            non drag drop mouse movements. 
+            
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">MouseEventArgs</param>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.treeViewMain_MouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            treeViewMain_MouseDown
+            
+            This method occurs when the mouse down button is pressed.
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">MouseEventArgs</param>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.treeViewMain_MouseMove(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            treeViewMain_MouseMove
+            
+            This event occurs when a mouse is moved. This event does
+            not fire during a drag.
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">MouseEventArgs</param>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.treeViewmain_Click(System.Object,System.EventArgs)">
+            <summary>
+            treeViewMain_Click
+            
+            This method is used pop up the context menu if the right mouse button
+            is clicked.
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">EventArgs</param>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.treeViewMain_Drag(System.Object,System.Windows.Forms.ItemDragEventArgs)">
+            <summary>
+            treeViewMain_Drag
+            
+            This method occurs when a drag is started.
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">ItemDragEventArgs</param>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.treeViewMain_AfterSelect(System.Object,System.Windows.Forms.TreeViewEventArgs)">
+            <summary>
+            The event occurs after a node has been selected.
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">eventArgs</param>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.treeViewMain_DragDrop(System.Object,System.Windows.Forms.DragEventArgs)">
+            <summary>
+            Private event that occures when a drag drop happens in the control.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.treeViewMain_GiveFeedback(System.Object,System.Windows.Forms.GiveFeedbackEventArgs)">
+            <summary>
+            This method is used to set the proper
+            mouse icon during drag.
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">GiveFeedbackEventArgs</param>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.treeViewMain_BeforeExpand(System.Object,System.Windows.Forms.TreeViewCancelEventArgs)">
+            <summary>
+            This method takes the tree node collection then searches
+            for all the folders under the selected node.  
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">eventargs</param>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.treeViewMain_DragEnter(System.Object,System.Windows.Forms.DragEventArgs)">
+            <summary>
+            treeViewMain_DragEnter
+            
+            This event fires when a drag event is enters. This is 
+            totally under the control of the treeView when this
+            will occur.
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">DragEventArgs</param>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.treeViewMain_DragLeave(System.Object,System.EventArgs)">
+            <summary>
+            treeViewMain_DragLeave
+            
+            This event occurs when the drag terminates. This is under the control
+            of the treeView and typically occurs when the mouse up happens while
+            in drag. Do not modify this code to use the mouse up event instead 
+            because it's behavior does not properly support drag drop directly.
+            
+            This control doesn't support dragging out of the window at this time.
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">eventArgs</param>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.FireFolderNotFoundError(System.String,System.String)">
+            <summary>
+            FireFolderNotFoundError
+            
+            This is a stock response to a common function is used for this.
+            </summary>
+            <param name="message">Message to display or return.</param>
+            <param name="title">Title of the message box if shown.</param>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.FireErrorEvent(System.String,System.String,System.Int32)">
+            <summary>
+            This method is use to fire the control error event.
+            </summary>
+            <param name="errorText">Text of the error</param>
+            <param name="errorContext">The method the error occured in</param>
+            <param name="errorEnum">The error constant</param>
+        </member>
+        <member name="F:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.onControlError">
+            <summary>
+            This is the ControlError private event handler declaration.
+            </summary>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.OnControlError(ExchangeSDK.Tools.ExchangeTreeView.ControlEventArgs)">
+            <summary>
+            Call this function from inside the control code to make an
+            event fire.
+            </summary>
+            <param name="e">ControllEventArgs</param>
+        </member>
+        <member name="F:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.onControlGeneratedError">
+            <summary>
+            This is the ControlGeneratedError private event handler declaration.
+            </summary>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.OnControlGeneratedError(ExchangeSDK.Tools.ExchangeTreeView.ControlGeneratedEventArgs)">
+            <summary>
+            Call this function from inside the control code to make an
+            event fire.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.FireControlGeneratedEvent(System.String,System.String)">
+            <summary>
+            Thie method is used to fire the error event.
+            </summary>
+            <param name="errorText">Text of the error.</param>
+            <param name="errorMethod">Method that generated the error.</param>
+        </member>
+        <member name="F:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.onSelection">
+            <summary>
+            This is stock error event code. Related to
+            onSelection event.
+            </summary>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.OnSelection(ExchangeSDK.Tools.ExchangeTreeView.SelectionEventArgs)">
+            <summary>
+            OnSelection
+            
+            Call this function from inside the control code to make an
+            event fire.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.InputFormButtonSelection(System.Object,System.EventArgs)">
+            <summary>
+            InputFormButtonSelection
+            
+            This event occurs when a button on the input
+            form is selected.
+            </summary>
+            <param name="o">not used</param>
+            <param name="e">EventArgs</param>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.defaultMenu_Popup(System.Object,System.EventArgs)">
+            <summary>
+            DefaultMenu_Popup
+            
+            This event calls the method that clears the context menu.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.defaultMenuNew_Click(System.Object,System.EventArgs)">
+            <summary>
+            DefaultMenuNew_Click
+            
+            This event handler process the new folder context menu item.
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">eventArgs</param>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.DefaultMenuRename_Click(System.Object,System.EventArgs)">
+            <summary>
+            DefaultMenuRename_Click
+            
+            This event handler process the rename folder context menu item.
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">eventArgs</param>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.DefaultMenuDelete_Click(System.Object,System.EventArgs)">
+            <summary>
+            DefaultMenuDelete_Click
+            
+            This event handler process the folder delete context menu item.
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">eventArgs</param>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.dragDropMenu_Move(System.Object,System.EventArgs)">
+            <summary>
+            This event occurs when a move is selected on the
+            drag drop context menu.
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">eventArgs</param>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.dragDropMenu_Copy(System.Object,System.EventArgs)">
+            <summary>
+            This event occurs when a copy is selected from the
+            drag drop context menu.
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">eventArgs</param>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.dragDropMenu_Cancel(System.Object,System.EventArgs)">
+            <summary>
+            This event occurs when cancel is selected on the drag
+            drop context menu. No work to do here just log the event for debugging uses.
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">eventArgs</param>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.menuRootNew_Click(System.Object,System.EventArgs)">
+            <summary>
+            This method handles the new folder event for the root menu.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.menuRootCancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            This method handles the cancel event for the root menu.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.ClearContextMenu">
+            <summary>
+            This method clears the form of any context menu, so it literally turns
+            off the context menu.
+            </summary>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.CopyNode(ExchangeSDK.Tools.ExchangeTreeView.ExchTreeNode,ExchangeSDK.Tools.ExchangeTreeView.ExchTreeNode)">
+            <summary>
+            This method copies and uri and it's subfolders from
+            source to destination parent.
+            </summary>
+            <param name="fromNode">Source node.</param>
+            <param name="toNode">Destination node.</param>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.MoveNode(ExchangeSDK.Tools.ExchangeTreeView.ExchTreeNode,ExchangeSDK.Tools.ExchangeTreeView.ExchTreeNode)">
+            <summary>
+            This method moves a node from the source uri to the destination
+            uri.
+            </summary>
+            <param name="fromNode">Source node.</param>
+            <param name="toNode">Destination node.</param>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.IsRoot(ExchangeSDK.Tools.ExchangeTreeView.ExchTreeNode)">
+            <summary>
+            The method find out if this currently selected node is the
+            root node.
+            </summary>
+            <param name="workNode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.IsLocationXYSelectedNode(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            IsLocationXYSelectedNode
+            
+            Ths method calls LocateTreeNode to find out if an mouse
+            location is in the bounds of the selected node.
+            </summary>
+            <param name="x">mouse x</param>
+            <param name="y">mouse y</param>
+            <param name="pointToClient">True is this is a drag.</param>
+            <returns>True if it's the selected node.</returns>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.IsSameNode(System.Int32,System.Int32,ExchangeSDK.Tools.ExchangeTreeView.ExchTreeNode,System.Boolean)">
+            <summary>
+            IsSameNode
+            
+            This method is used to find out if the mouse coordinates are
+            the same and the node supplied as an argument.
+            </summary>
+            <param name="X">mouse x</param>
+            <param name="Y">mouse y</param>
+            <param name="workNode">Nodes to test against.</param>
+            <param name="pointToClient">True if mouse in drag.</param>
+            <returns>True is the coordinates are in the node.</returns>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.IsNodeParentOfDestination(ExchangeSDK.Tools.ExchangeTreeView.ExchTreeNode,ExchangeSDK.Tools.ExchangeTreeView.ExchTreeNode)">
+            <summary>
+            IsNodeParentOfDestination
+            
+            This method is used to find out if the current node
+            is the parent of the node to avoid the problem of the 
+            user trying to move to it's parent which it's already
+            a child of.
+            </summary>
+            <param name="sourceNode">Source node.</param>
+            <param name="destinationNode">Destination node.</param>
+            <returns>True if destination is a parent.</returns>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.LocateTreeNode(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            LocateTreeNode
+            
+            This method is used to find the node object associated with
+            an mouse location. 
+            </summary>
+            <param name="x">mouse x</param>
+            <param name="y">mouse y</param>
+            <param name="pointToClient">True is the mouse is in drag.</param>
+            <returns>The tree node that contains the mouse location.</returns>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.GetFolderNameFromUri(System.String)">
+            <summary>
+            GetFolderNameFromUri
+            
+            This function gets the folder name from the 
+            end of the URI.
+            </summary>
+            <param name="workUri">Complete URI.</param>
+            <returns>Folder name string.</returns>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.RemoveTrailingWacks(System.String)">
+            <summary>
+            This method removes the extra forward slashes on the end of a uri. This is
+            used when an appending folder names to then end of an uri and
+            you want to remove embedded forward slashes.
+            </summary>
+            <param name="uri"></param>
+            <returns></returns>
+        </member>
+        <member name="E:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.ControlError">
+            <summary>
+            Exposed event for the controlError event.
+            </summary>
+        </member>
+        <member name="E:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.ControlGeneratedError">
+            <summary>
+            Exposed event for the controlGeneratedError event.
+            </summary>
+        </member>
+        <member name="E:ExchangeSDK.Tools.ExchangeTreeView.ExchangeTreeViewControl.Selection">
+            <summary>
+            Event Handler - Selection
+            </summary>
+        </member>
+        <member name="T:ExchangeSDK.Tools.ExchangeTreeView.SelectionEventArgs">
+            <summary>
+            This class is derived from the System.Event class. It has
+            added properties that can be evaluated when a selection event
+            occurs.
+            </summary>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.SelectionEventArgs.#ctor(System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Constructor for the SelectionEventArgs.
+            </summary>
+            <param name="Uri">URI of the selected folder</param>
+            <param name="RootUri">Root URI of the selected folder</param>
+            <param name="DisplayName">Display name of the folder</param>
+            <param name="inDrag">True if the folder is in dragdrop</param>
+        </member>
+        <member name="P:ExchangeSDK.Tools.ExchangeTreeView.SelectionEventArgs.Uri">
+            <summary>
+            The URI of the selected folder.
+            </summary>
+        </member>
+        <member name="P:ExchangeSDK.Tools.ExchangeTreeView.SelectionEventArgs.RootUri">
+            <summary>
+            Root URI of the folder.
+            </summary>
+        </member>
+        <member name="P:ExchangeSDK.Tools.ExchangeTreeView.SelectionEventArgs.DisplayName">
+            <summary>
+            Displayname of the selected folder.
+            </summary>
+        </member>
+        <member name="P:ExchangeSDK.Tools.ExchangeTreeView.SelectionEventArgs.InDrag">
+            <summary>
+            True if the selection event while fired while in dragdrop.
+            </summary>
+        </member>
+        <member name="T:ExchangeSDK.Tools.ExchangeTreeView.InputFormArgs">
+            <summary>
+            This class is derived from the System.Event class.
+            The arguments for the input form event which fires
+            when the ok or cancel button is selected.
+            </summary>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.InputFormArgs.#ctor(System.String,System.Boolean,System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="enteredText"></param>
+            <param name="Canceled"></param>
+            <param name="userContext"></param>
+        </member>
+        <member name="P:ExchangeSDK.Tools.ExchangeTreeView.InputFormArgs.UserContext">
+            <summary>
+            User context property used to pass on information
+            about which context the input box was invoked in.
+            </summary>
+        </member>
+        <member name="P:ExchangeSDK.Tools.ExchangeTreeView.InputFormArgs.EnteredText">
+            <summary>
+            The user entered text.
+            </summary>
+        </member>
+        <member name="P:ExchangeSDK.Tools.ExchangeTreeView.InputFormArgs.Canceled">
+            <summary>
+            The dialog cancellation variable.
+            </summary>
+        </member>
+        <member name="T:ExchangeSDK.Tools.ExchangeTreeView.ControlEventArgs">
+            <summary>
+            This class is derived from the System.Event class. 
+            It holds added error values that can be viewed when
+            this a control error event occurs.
+            </summary>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ControlEventArgs.#ctor(System.String,System.String,System.Int32)">
+            <summary>
+            Constructor of the error event which is called internally
+            by the control.
+            </summary>
+            <param name="errorText">Error description.</param>
+            <param name="errorContext">Error context.</param>
+            <param name="errorConstant">Error constant.</param>
+        </member>
+        <member name="P:ExchangeSDK.Tools.ExchangeTreeView.ControlEventArgs.ErrorConstant">
+            <summary>
+            The error constant. See the localizable errors enumeration.
+            </summary>
+        </member>
+        <member name="P:ExchangeSDK.Tools.ExchangeTreeView.ControlEventArgs.ErrorText">
+            <summary>
+            The error description string.
+            </summary>
+        </member>
+        <member name="P:ExchangeSDK.Tools.ExchangeTreeView.ControlEventArgs.ErrorContext">
+            <summary>
+            A string which hold the context of the error. Usually this
+            hold the value of the method the error occured in.
+            </summary>
+        </member>
+        <member name="T:ExchangeSDK.Tools.ExchangeTreeView.ControlGeneratedEventArgs">
+            <summary>
+            This class is derived from the System.Event class. 
+            It adds properties that are specific to the user 
+            generated error that occured.
+            </summary>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.ControlGeneratedEventArgs.#ctor(System.String,System.String)">
+            <summary>
+            This is the constructor for the ControlGeneratedEventArgs class
+            </summary>
+            <param name="errorMessage">The message of the error</param>
+            <param name="errorMethod">The method the error occured in</param>
+        </member>
+        <member name="P:ExchangeSDK.Tools.ExchangeTreeView.ControlGeneratedEventArgs.ErrorMessage">
+            <summary>
+            Error message string.
+            </summary>
+        </member>
+        <member name="P:ExchangeSDK.Tools.ExchangeTreeView.ControlGeneratedEventArgs.ErrorMethod">
+            <summary>
+            The method that the error occurred in.
+            </summary>
+        </member>
+        <member name="T:ExchangeSDK.Tools.ExchangeTreeView.InputForm">
+            <summary>
+            InputForm
+            
+            This form is used to enter a folder name when renaming or creating a
+            new folder.
+            
+            Note: This form does not set any of the User Interface strings so it is up to the
+            consumer of the form to do that. In the case of the Exchange Tree View Control it
+            sets the Input Form User Interface strings.
+            </summary>
+        </member>
+        <member name="F:ExchangeSDK.Tools.ExchangeTreeView.InputForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.InputForm.Display">
+            <summary>
+            Display
+            
+            This is the function that is called when this dialog is
+            needs to be displayed.
+            </summary>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.InputForm.SetUIText(System.String,System.String,System.String,System.String)">
+            <summary>
+            SetUIText
+            
+            </summary>
+            <param name="labelText"></param>
+            <param name="acceptText"></param>
+            <param name="cancelText"></param>
+            <param name="caption"></param>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.InputForm.SetDefaultValue(System.String)">
+            <summary>
+            Sets the default User Interface textbox value.
+            </summary>
+            <param name="defaultValue">Sets the value of the textbox</param>
+        </member>
+        <member name="F:ExchangeSDK.Tools.ExchangeTreeView.InputForm.onButtonSelection">
+            <summary>
+            Event Handler - Declaration 
+            
+            Placed here because it's close to the event
+            handler.
+            </summary>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.InputForm.OnButtonSelection(ExchangeSDK.Tools.ExchangeTreeView.InputFormArgs)">
+            <summary>
+            OnSelection
+            
+            Call this function from inside the control code to make an
+            event fire.
+            </summary>
+            <param name="e">InputFormArgs</param>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.InputForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.InputForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.InputForm.button1_Click(System.Object,System.EventArgs)">
+            <summary>
+            button1_Click 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.InputForm.ExitOnOK">
+            <summary>
+            ExitOnOk
+            
+            Returns an event and hides the form.
+            </summary>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.InputForm.ExitOnCancel">
+            <summary>
+            ExitOnCancel
+            
+            </summary>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.InputForm.button2_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="E:ExchangeSDK.Tools.ExchangeTreeView.InputForm.ButtonSelection">
+            <summary>
+            Event Handler - Selection
+            </summary>
+        </member>
+        <member name="T:ExchangeSDK.Tools.ExchangeTreeView.ExchTreeNode">
+            <summary>
+            This class is derived from the tree node class and adds
+            two properties to the tree node class.
+            </summary>
+        </member>
+        <member name="P:ExchangeSDK.Tools.ExchangeTreeView.ExchTreeNode.RootUri">
+            <summary>
+            Root URI is the root of a tree in the treeview.
+            </summary>
+        </member>
+        <member name="P:ExchangeSDK.Tools.ExchangeTreeView.ExchTreeNode.Uri">
+            <summary>
+            URI is the location of a subfolder in the treeview.
+            </summary>
+        </member>
+        <member name="T:ExchangeSDK.Tools.ExchangeTreeView.DragNodes">
+            *********************************************************
+                                      DRAG NODES CLASS
+            *********************************************************                          
+            <summary>
+            This class is used to hold the drag related properties in a 
+            convenient class form.
+            </summary>
+        </member>
+        <member name="P:ExchangeSDK.Tools.ExchangeTreeView.DragNodes.DragCancel">
+            <summary>
+            Cancel the drag operation.
+            </summary>
+        </member>
+        <member name="P:ExchangeSDK.Tools.ExchangeTreeView.DragNodes.StartingDragNode">
+            <summary>
+            Starting node string for the drag.
+            </summary>
+        </member>
+        <member name="P:ExchangeSDK.Tools.ExchangeTreeView.DragNodes.SelectedDragNode">
+            <summary>
+            The current selected drag node string.
+            </summary>
+        </member>
+        <member name="T:ExchangeSDK.Tools.ExchangeTreeView.WebDavAccessor">
+            <summary>
+            
+            This class is used to access an Exchange 2000 store
+            using WebDAV and the HttpWebRequest object.
+            </summary>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.WebDavAccessor.Rename(System.String,System.String)">
+            <summary>
+            Rename
+            
+            This function renames a folder.
+            </summary>
+            <param name="Uri">The existing folder URI</param>
+            <param name="NewUri">The complete URI to new folder</param>
+            <returns>XML data returned by WebDAV</returns>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.WebDavAccessor.DeleteItem(System.String)">
+            <summary>
+            DeleteItem
+            
+            This function deletes an item or folder. 
+            
+            </summary>
+            <param name="Uri">Existing folder URI.</param>
+            <returns>XML data returned by WebDAV.</returns>
+        </member>
+        <member name="T:ExchangeSDK.Tools.ExchangeTreeView.WebDavHelper">
+            <summary>
+            Helper is a class used to format XML for a WebDav call. It is
+            derived from WebDavAccessor.
+            </summary>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.WebDavHelper.GetFolders(System.String,System.Data.DataRow)">
+            <summary>
+            This function uses the WebDavAccessor to make a WebDAV call
+            to the store and it packages up the XML as a dataset. 
+            </summary>
+            <param name="uri">The location of the root folder</param>
+            <param name="dataRow">Data row for the root in the internal table.</param>
+            <returns>Data View of folders</returns>
+        </member>
+        <member name="M:ExchangeSDK.Tools.ExchangeTreeView.WebDavHelper.MakeDataViewFromXML(System.String)">
+            <summary>
+            MakeDataViewFromXML
+            
+            </summary>
+            <param name="xmlData">Data returned from the Exchange 2000 store.</param>
+            <returns>DataView</returns>
+        </member>
+        <member name="T:ExchangeSDK.Tools.ExchangeTreeView.WebDavHelper.FolderColumnNames">
+            <summary>
+            The folder column names associated with the returned dataset.
+            </summary>
+        </member>
+    </members>
+</doc>

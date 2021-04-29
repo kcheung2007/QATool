@@ -1,0 +1,25 @@
+# TO, CC, BCC, profile, password
+zjoe11@ztestaudit.zantaz.com, zjoe12@ztestaudit.zantaz.com, zjoe13@ztestaudit.zantaz.com, zjoe5, password
+zjoe21@ztestaudit.zantaz.com;zjoe31@ztestaudit.zantaz.com, zjoe22@ztestaudit.zantaz.com;zjoe32@ztestaudit.zantaz.com, zjoe23@ztestaudit.zantaz.com;zjoe33@ztestaudit.zantaz.com, zjoe5, password
+,,zjoe22@ztestaudit.zantaz.com;zjoe32@ztestaudit.zantaz.com;zjoe41@ztestaudit.zantaz.com, zjoe5, password
+zjoeg1@ztestaudit.zantaz.com, zjoeg2@ztestaudit.zantaz.com, zjoeg3@ztestaudit.zantaz.com, zjoe5, password
+zjoeg2@ztestaudit.zantaz.com;zjoeg5@ztestaudit.zantaz.com, zjoeg3@ztestaudit.zantaz.com, zjoeg4@ztestaudit.zantaz.com, zjoe5, password
+,,zjoeg2@ztestaudit.zantaz.com;zjoeg4@ztestaudit.zantaz.com, zjoe5, password
+zjoeg2@ztestaudit.zantaz.com, zjoeg3@ztestaudit.zantaz.com;zjoeg5@ztestaudit.zantaz.com, zjoeg4@ztestaudit.zantaz.com, zjoe5, password
+zjoe12@ztestaudit.zantaz.com;zjoe22@ztestaudit.zantaz.com;zjoeg4@ztestaudit.zantaz.com, zjoeg3@ztestaudit.zantaz.com, zjoe23@ztestaudit.zantaz.com;zjoeg5@ztestaudit.zantaz.com, zjoe5, password
+zjoe11@ztestaudit.zantaz.com;zjoeg5@ztestaudit.zantaz.com, zjoe12@ztestaudit.zantaz.com;zjoe21@ztestaudit.zantaz.com, zjoe13@ztestaudit.zantaz.com;zjoe23@ztestaudit.zantaz.com;zjoeg3@ztestaudit.zantaz.com, zjoe5, password
+,,zjoe12@ztestaudit.zantaz.com;zjoeg5@ztestaudit.zantaz.com, zjoe5, password
+zjoe21@ztestaudit.zantaz.com;zjoe31@ztestaudit.zantaz.com;zjoe41@ztestaudit.zantaz.com, zjoe22@ztestaudit.zantaz.com;zjoe32@ztestaudit.zantaz.com, zjoe23@ztestaudit.zantaz.com;zjoe33@ztestaudit.zantaz.com;zjoeg5@ztestaudit.zantaz.com, zjoe5, password
+,,zjoe21@ztestaudit.zantaz.com;zjoe31@ztestaudit.zantaz.com;zjoe41@ztestaudit.zantaz.com, zjoe5, password
+zjoeg4@ztestaudit.zantaz.com, zjoeg5@ztestaudit.zantaz.com, zjoe22@ztestaudit.zantaz.com, zjoe5, password
+zjoeg1@ztestaudit.zantaz.com;zjoeg5@ztestaudit.zantaz.com, zjoeg2@ztestaudit.zantaz.com, zjoeg3@ztestaudit.zantaz.com, zjoe5, password
+,,zjoeg1@ztestaudit.zantaz.com;zjoeg5@ztestaudit.zantaz.com, zjoe5, password
+zjoeg1@ztestaudit.zantaz.com;zjoe21@ztestaudit.zantaz.com;zjoeg3@ztestaudit.zantaz.com, zjoe22@ztestaudit.zantaz.com;zjoe41@ztestaudit.zantaz.com,zjoe23@ztestaudit.zantaz.com, zjoe5, password
+,, zjoe32@ztestaudit.zantaz.com;zjoeg4@ztestaudit.zantaz.com, zjoe5, password
+nobody@ztestaudit.zantaz.com,,, zjoe5, password
+,nobody@ztestaudit.zantaz.com,, zjoe5, password
+,,nobody@ztestaudit.zantaz.com, zjoe5, password
+nobody@ztestaudit.zantaz.com,nobody@ztestaudit.zantaz.com,nobody@ztestaudit.zantaz.com, zjoe5, password
+zjoe31@ztestaudit.zantaz.com;nobody@ztestaudit.zantaz.com,,, zjoe5, password
+nobody@ztestaudit.zantaz.com,,zjoe5@ztestaudit.zantaz.com, zjoe5, password
+nobody@ztestaudit.zantaz.com,,zjoeg4@ztestaudit.zantaz.com, zjoe5, password
